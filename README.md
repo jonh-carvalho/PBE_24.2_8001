@@ -1,8 +1,8 @@
 # RepositorioTemplate
 Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
+**!! Atenção: Renomeie o seu repositório para PBE_(Ano.Semestre)_(Turma)_(Grupo)_(NomeDoProjeto). !!** 
 
-**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2024.1_PFE1_ProjetoPandora!!**
+**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: PBE_24.2_8001_I_Pandora!!**
  
  (Apague essa seção)
 
