@@ -4,7 +4,7 @@
 | ---------------------------- | ----------------------------------------------------------------------------------------------------- |
 | __01__ - 08/08/24    | :material-check: Apresentação da Disciplina - Processo de Desenvolvimento                           |
 | __02__ - 09/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx) |
-| __03__ - 15/08/24     | :material-check:     Configuração de Ambiente de Desenvolvimento                                    |
+| __03__ - 15/08/24     | :material-check:     [Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm)                                    |
 | __04__ - 16/08/24     | :material-check: Configuração repositório Github                                                   |
 | __05__ - 22/03/24     | :material-check: Apresentação de Tema do Projeto                                                    |
 | __06__ - 23/03/24     | :material-check: Principais Funcionalidades do Projeto                                                |
