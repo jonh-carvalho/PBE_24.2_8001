@@ -36,7 +36,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 2. Como será o processo para cadastrar um novo clientetorneio?
+### 2. Como será o processo para cadastrar um novo cliente?
  
 <p align = "justify">
 <b>XXXX</b> - O moderador deverá fazer login e...
