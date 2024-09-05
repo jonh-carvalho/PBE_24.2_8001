@@ -10,5 +10,5 @@
 | __06__ - 23/03/24     | :material-check: Principais Funcionalidades do Projeto            |
 | __07__ - 29/08/24     | :material-check: Elaboração 5w2h                                  |
 | __08__ - 30/08/24     | :material-check: [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)                         |
-| __09__ - 05/09/24     |                                                                                                       |
+| __09__ - 05/09/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)                                                               |
 | __10__ - 06/09/24     |                                                                                                       |
