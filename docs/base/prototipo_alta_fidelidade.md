@@ -3,7 +3,6 @@ id: prototipo
 title: Protótipo
 ---
 
-# Não precisa entregar para a AP1
 ## Introdução
  
 <p align = "justify">
