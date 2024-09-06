@@ -1,24 +1,23 @@
 ---
-id: nome_do_documento
-title: Titulo do documento
+id: Modelo_de_documento
+title: Modelo de Documento
 ---
-
-
 ## Introdução
 
 <p align = "justify">
 <!-- Escreva uma introdução simples e concisa, explicando do que se trata o documento e como ele será usado no projeto (qual o objetivo do documento). -->
 </p>
 
-## Metodologia 
+## Metodologia
 
 <p align = "justify">
 <!-- Descreva como o documento foi feito, como a técnica foi utilizada no projeto. -->
 </p>
 
-## Desenvolvimento (Renomeie este tópico)   
+## Desenvolvimento (Renomeie este tópico)
 
 <!-- Mude o título do tópico de desenvolvimento para outros individuais de cada artefato. Adicione quantos subtópicos precisar. -->
+
 ### Versão 1.0
 
 <p align = "justify">
@@ -29,7 +28,7 @@ title: Titulo do documento
 <!-- Escreva aqui a primeira versão do documento. -->
 </p>
 
-## Conclusão  
+## Conclusão
 
 <p align = "justify">
 <!-- Descreva neste tópico como a aplicação da técnica e a criação do documento foi útil para o projeto. -->
@@ -42,10 +41,10 @@ Exemplo:
 > Referência
  -->
 
->
-
 ## Autor(es)
+
 <!-- Para cada alteração no documento, lembre-se de descrever as mudanças, a versão, a data e creditar os autores. -->
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| dd/mm/aa | 1.0 | Criação do documento | Autores | 
+
+| Data     | Versão | Descrição            | Autor(es) |
+| -------- | ------- | ---------------------- | --------- |
+| dd/mm/aa | 1.0     | Criação do documento | Autores   |
