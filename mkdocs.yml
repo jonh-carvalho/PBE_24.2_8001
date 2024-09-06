@@ -10,7 +10,7 @@ theme:
   language: pt-BR
   favicon: images/favicon.png
   user_color_mode_toggle: true
-  logo: assets/logo.png
+  logo: assets/ibmec_logo.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
