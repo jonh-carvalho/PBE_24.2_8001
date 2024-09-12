@@ -1,6 +1,6 @@
 # Projeto Back-End
 
-[PBE_24.2_8002_I_MMAA](../assets/Projetos/yx.docx)
+[PBE_24.2_8001_I_BrainBox](https://github.com/Projetos-de-Extensao/PBE_24.2_8001_I_BrainBox)
 
 [PBE_24.2_8001_II_Vascode](https://github.com/Projetos-de-Extensao/PBE_24.2_8001_II_Vascode)
 
