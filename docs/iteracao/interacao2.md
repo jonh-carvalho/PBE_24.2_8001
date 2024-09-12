@@ -1,6 +1,6 @@
 ---
-id: interação2
-title: Interação 2
+id: iteração2
+title: Iteração 2
 ---
 # Interação 2 (29/09/24 à 11/09/2024)
 
