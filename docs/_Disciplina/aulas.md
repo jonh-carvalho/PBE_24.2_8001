@@ -12,3 +12,4 @@
 | __08__ - 30/08/24     | :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)                                                                                    |
 | __09__ - 05/09/24     | :material-check:[Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)                                                                                                                |
 | __10__ - 06/09/24     | :material-check:[RUP](../assets/Aulas/RUP.pdf)                                                                                                                                                                     |
+| __11__ - 12/09/24     | :material-check:[RUP](../assets/Aulas/AnaliseOO&UML.pdf)                                                                                                                                                                     |
