@@ -2,13 +2,13 @@
 id: iteração7
 title: Iteração 7
 ---
-# Interação 7 (07/11/24 à 20/10/2024)
+# Iteração 7 (07/11/24 à 20/10/2024)
 
-## Planejamento de Interação
+## Planejamento de Iteração
 
 #### Presentes na reunião: XXXXX
 
-### Lista de Tarefas da Interação
+### Lista de Tarefas da Iteração
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
@@ -28,7 +28,7 @@ title: Iteração 7
 
 #### Presentes na reunião: XXXX
 
-### Dividas da Interação
+### Dividas da Iteração
 
 ### Riscos Encontrados
 
