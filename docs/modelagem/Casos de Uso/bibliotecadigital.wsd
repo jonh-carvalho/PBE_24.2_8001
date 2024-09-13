@@ -1,4 +1,5 @@
-@startuml
+@startuml BibliotecaDigital
+
 left to right direction
 actor "Usuário Autenticado" as UA
 actor Usuario as U
