@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+actor "Usuário Autenticado" as UA
+actor Usuario as U
+actor SistemaDePagamento as SP
+
+
+package BibliotecaDigital {
+  usecase "Reservar um Livro" as RL
+  usecase "Procurar um Livro" as PL
+  usecase "Baixar um Livro" as BL
+  (Sistema) as S
+}
+UA --> RL
+UA --> PL
+UA --> BL
+
+
+
+
+U -> (Login)
+
+U --> (Pesquisar Livro)
+U --> (Reservar Livro)
+U --> (Cancelar Reserva)
+
+
+U --> S
+SP --> S : Verificar status de assinatura
+
+(Sistema) <|-- (Verificar disponibilidade de livro)
+(Sistema) <|-- (Registrar reserva de livro)
+(Sistema) <|-- (Atualizar status do livro)
+
+U --> (Receber Notificação)
+
+
+@enduml

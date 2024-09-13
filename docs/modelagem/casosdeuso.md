@@ -19,7 +19,7 @@ Perfis
 	Pesquisar
 	Visualização
 	Seguir/Deixar de Seguir
-Postagens (Público)
+Postagens (Público) 	 	
 	Criação
 	Exclusão
 	Interação
