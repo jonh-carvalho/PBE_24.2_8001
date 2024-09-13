@@ -1,8 +1,4 @@
-**modelagem orientada a objetos** que começa com um **caso de uso**:
-
----
-
-### Problema de Modelagem
+## Problema de Modelagem
 
 Você foi contratado para desenvolver um sistema para gerenciar uma **biblioteca de livros digitais**. O sistema permitirá que os usuários façam login, procurem livros, reservem livros, e baixem cópias para leitura offline. A biblioteca também oferece assinatura premium, onde os usuários podem acessar livros exclusivos e ganhar vantagens especiais, como reservas antecipadas e downloads ilimitados.
 
