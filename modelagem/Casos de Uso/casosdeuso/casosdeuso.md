@@ -7,33 +7,37 @@ title: Diagrama de Casos de Uso
 
 ### Descrição:
 
-Contas
-	Criação
-	Entrada
-	Alteração
-	Recuperar Senha
-	Exclusão Lógica
-	Visualização
-Perfis
-	Edição
-	Pesquisar
-	Visualização
-	Seguir/Deixar de Seguir
-Postagens (Público) 	 	
-	Criação
-	Exclusão
-	Interação
-	Visualização
-Mensagens (Privado)
-	Criação
-	Exclusão
-	Visualização
-Galerias
-	Albuns
-Blogs
-Grupos
+- Contas
+	- Criação
+	- Entrada
+	- Alteração
+	- Recuperar Senha
+	- Exclusão Lógica
+	- Visualização
 
-Criação de uma conta no sistema
+- Perfis
+	- Edição
+	- Pesquisar
+	- Visualização
+	- Seguir/Deixar de Seguir
+
+- Postagens (Público) 	 	
+	- Criação
+	- Exclusão
+	- Interação
+	- Visualização
+
+- Mensagens (Privado)
+	- Criação
+	- Exclusão
+	- Visualização
+
+- Galerias
+	- Albuns
+- Blogs
+- Grupos
+
+### Criação de uma conta no sistema
 
 Atores:
 	Usuário
