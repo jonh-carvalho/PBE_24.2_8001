@@ -1,0 +1,40 @@
+@startuml
+class Usuario {
+    - nome : String
+    - email : String
+    - senha : String
+    + login()
+    + realizarEmpréstimo()
+}
+
+class Livro {
+    - título : String
+    - autor : String
+    - ISBN : String
+    - anoPublicação : int
+    + verificarDisponibilidade()
+}
+
+class Emprestimo {
+    - dataEmpréstimo : Date
+    - dataDevolução : Date
+    + calcularMulta()
+}
+
+class Bibliotecario {
+    - idFuncionário : int
+    + adicionarLivro()
+    + removerLivro()
+}
+
+class Catalogo {
+    - listaLivros : List<Livro>
+    + buscarLivro()
+}
+
+Usuario --> Emprestimo 
+Emprestimo --> Livro 
+Emprestimo --> Usuario 
+Bibliotecario --> Usuario
+Catalogo <-- Livro 
+@enduml

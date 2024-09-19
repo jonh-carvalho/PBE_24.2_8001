@@ -1,0 +1,38 @@
+@startuml
+class Usuario{
+    + nome
+    + email
+    + status
+    + numreservas
+    +autenticar()
+    + reservarLivro()
+    + cancelarReserva()
+}
+
+class Livro{
+    + título
+    + autor
+    + status 
+    + prazo de retirada
+    + verificarDisponibilidade()
+    + reservar()
+    + liberarReserva().
+}
+
+class Biblioteca{
+    + catálogo de livros
+    + usuários cadastrados
+    + buscarLivro()
+    + registrarReserva()
+}
+
+class Assinatura{
+    + tipo 
+    + limite de reservas
+    + verificarBenefícios()
+}
+
+Usuario -- Biblioteca
+Livro -- Biblioteca
+Biblioteca -- Assinatura
+@enduml
