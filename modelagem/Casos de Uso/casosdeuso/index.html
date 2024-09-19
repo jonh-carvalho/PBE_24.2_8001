@@ -1132,6 +1132,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#entrada-do-usuario-no-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entrada do usuário no sistema
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1213,6 +1222,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#entrada-do-usuario-no-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entrada do usuário no sistema
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1288,43 +1306,97 @@
 <li>Grupos</li>
 </ul>
 <h3 id="criacao-de-uma-conta-no-sistema">Criação de uma conta no sistema</h3>
-<p>Atores:
-    Usuário
-    Sistema</p>
-<p>Pré-Condições:
-    Nenhuma</p>
-<p>Fluxo Básico:
-    1. Usuário fornece e-mail, senha e confirmações
-    2. Dados do Usuário são validados pelo Sistema
-    3. Dados do Usuário são encriptados pelo Sistema
-    4. Dados do Usuário são persistidos pelo Sistema
-    5. Sistema gera um link com prazo de expiração
-    6. Sistema envia e-mail de verificação, com o link, para o Usuário
-    7. Usuário confirma o e-mail antes do link expirar
-    8. Sistema confirma que o Cadastro do Usuário foi realizado com sucesso
-    9. Sistema redireciona o Usuário para a página de Entrada</p>
-<p>Fluxos Alternativos:
-    2a. E-mail do Usuário é inválido
-        2a1. Sistema exibe mensagem de erro
-    2b. Senha do Usuário não respeita regras de segurança
-        2b1. Sistema exibe mensagem de erro
-    7a. Usuário tenta confirmar o e-mail depois de o link expirar
-        7a1. Sistema sugere que o Usuário realize um novo Cadastro</p>
-<p>Entrada do usuário no sistema</p>
-<p>Atores:
-    Usuário
-    Sistema</p>
+<ul>
+<li>
+<p>Atores:</p>
+<ul>
+<li>Usuário</li>
+<li>Sistema</li>
+</ul>
+</li>
+<li>
+<p>Pré-Condições:</p>
+<ul>
+<li>Nenhuma</li>
+</ul>
+</li>
+<li>
+<p>Fluxo Básico:</p>
+<ol>
+<li>Usuário fornece e-mail, senha e confirmações</li>
+<li>Dados do Usuário são validados pelo Sistema</li>
+<li>Dados do Usuário são encriptados pelo Sistema</li>
+<li>Dados do Usuário são persistidos pelo Sistema</li>
+<li>Sistema gera um link com prazo de expiração</li>
+<li>Sistema envia e-mail de verificação, com o link, para o Usuário</li>
+<li>Usuário confirma o e-mail antes do link expirar</li>
+<li>Sistema confirma que o Cadastro do Usuário foi realizado com sucesso</li>
+<li>Sistema redireciona o Usuário para a página de Entrada</li>
+</ol>
+</li>
+<li>
+<p>Fluxos Alternativos:</p>
+<ul>
+<li>2a. E-mail do Usuário é inválido
+    2a1. Sistema exibe mensagem de erro</li>
+<li>2b. Senha do Usuário não respeita regras de segurança<ul>
+<li>2b1. Sistema exibe mensagem de erro</li>
+</ul>
+</li>
+<li>3a. Usuário tenta confirmar o e-mail depois de o link expirar<ul>
+<li>3a1. Sistema sugere que o Usuário realize um novo Cadastro</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="entrada-do-usuario-no-sistema">Entrada do usuário no sistema</h3>
+<ul>
+<li>
+<p>Atores:</p>
+<ul>
+<li>Usuário</li>
+<li>Sistema</li>
+</ul>
+</li>
+<li>
 <p>Pré-Condições:
     Usuário deve estar cadastrado</p>
-<p>Fluxo Básico:
-    1. Usuário fornece e-mail e senha
-    2. Sistema autentica o Usuário
-    3. Sistema redireciona o Usuário para a página inicial</p>
-<p>Fluxos Alternativos:
-    2a. Dados do Usuário Inválidos
-        2a1. Sistema exibe mensagem de erro
-    3a. Primeio acesso do Usuário
-        3a1. Sistema redireciona o Usuário para a página de edição de perfil</p>
+</li>
+<li>
+<p>Fluxo Básico:</p>
+<ul>
+<li>
+<ol>
+<li>Usuário fornece e-mail e senha</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sistema autentica o Usuário</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sistema redireciona o Usuário para a página inicial</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Fluxos Alternativos:</p>
+<ul>
+<li>2a. Dados do Usuário Inválidos<ul>
+<li>2a1. Sistema exibe mensagem de erro</li>
+</ul>
+</li>
+<li>3a. Primeio acesso do Usuário<ul>
+<li>3a1. Sistema redireciona o Usuário para a página de edição de perfil</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
