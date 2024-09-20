@@ -13,3 +13,6 @@
 | __09__ - 05/09/24     | :material-check:[Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)                                                                                                                |
 | __10__ - 06/09/24     | :material-check:[RUP](../assets/Aulas/RUP.pdf)                                                                                                                                                                     |
 | __11__ - 12/09/24     | :material-check:[Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf)                                                                                                                                                                     |
+| __12__ - 13/09/24     | :material-check: Análise OO e UML - Diagrama de Casos de Uso |
+| __13__ - 19/09/24     | :material-check: [Classes](../assets/Aulas/Classes_Pacotes.pdf)                |
+| __14__ - 12/09/24     | :material-check: Diagrama de Classes UML                                                                                                         |
