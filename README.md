@@ -6,8 +6,7 @@
 Descreva o seu projeto em linhas gerais. 
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
+**Linguagens**: Python, Django<br>
+**Tecnologias**: Github, Visual Studio Code<br>
+ os pré-requisitos para rodar o seu projeto são UX, Engenharia de Dados, POO.
 
