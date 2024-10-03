@@ -2390,7 +2390,7 @@ Dog() # Execute</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;__main__.Dog at 0x1d3815490f0&gt;</pre>
+<pre>&lt;__main__.Dog at 0x2266eea9510&gt;</pre>
 </div>
 </div>
 </div>
@@ -2443,7 +2443,7 @@ Dog() # Execute</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;__main__.Dog at 0x1d381549900&gt;</pre>
+<pre>&lt;__main__.Dog at 0x2266eea9900&gt;</pre>
 </div>
 </div>
 </div>
@@ -3069,7 +3069,7 @@ class Dog:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Vá em frente e imprima o sobjeto miles para ver qual saída você obtém:</p>
+<p>Vá em frente e imprima o objeto miles para ver qual saída você obtém:</p>
 </div>
 </div>
 </div>
@@ -3092,11 +3092,9 @@ class Dog:
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Dog</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x00aeff70</span><span class="o">&gt;</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-18">&gt;&gt;&gt; print(miles)
-&lt;__main__.Dog object at 0x00aeff70&gt;</div>
+<div class="clipboard-copy-txt" id="cell-18">print(miles)</div>
 </div>
 </div>
 </div>
@@ -3107,12 +3105,8 @@ class Dog:
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  Cell </span><span class="ansi-green-intense-fg ansi-bold">In[18], line 2</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    &lt;__main__.Dog object at 0x00aeff70&gt;</span>
-<span class="ansi-white-intense-fg ansi-bold">    ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;__main__.Dog object at 0x00000226701886A0&gt;
 </pre>
 </div>
 </div>
@@ -3153,7 +3147,19 @@ class Dog:
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># dog.py</span>
 
 <span class="k">class</span> <span class="nc">Dog</span><span class="p">:</span>
-    <span class="c1"># ...</span>
+    <span class="n">species</span> <span class="o">=</span> <span class="s2">"Canis familiaris"</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+    <span class="c1"># Instance method</span>
+    <span class="k">def</span> <span class="nf">description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span>
+
+    <span class="c1"># Another instance method</span>
+    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sound</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> says </span><span class="si">{</span><span class="n">sound</span><span class="si">}</span><span class="s2">"</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span>
@@ -3161,7 +3167,19 @@ class Dog:
 <div class="clipboard-copy-txt" id="cell-19"># dog.py
 
 class Dog:
-    # ...
+    species = "Canis familiaris"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Instance method
+    def description(self):
+        return f"{self.name} is {self.age} years old"
+
+    # Another instance method
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
 
     def __str__(self):
         return f"{self.name} is {self.age} years old"</div>
@@ -3200,13 +3218,11 @@ class Dog:
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">miles</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">"Miles"</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
-<span class="s1">'Miles is 4 years old'</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">miles</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">"Miles"</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-20">&gt;&gt;&gt; miles = Dog("Miles", 4)
-&gt;&gt;&gt; print(miles)
-'Miles is 4 years old'</div>
+<div class="clipboard-copy-txt" id="cell-20">miles = Dog("Miles", 4)
+print(miles)</div>
 </div>
 </div>
 </div>
@@ -3217,16 +3233,9 @@ class Dog:
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[20], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> miles <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">Dog</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Miles</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">4</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      2</span> <span style="color: rgb(0,135,0)">print</span>(miles)
-<span class="ansi-green-fg">      3</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Miles is 4 years old</span><span style="color: rgb(175,0,0)">'</span>
-
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: Dog() takes no arguments</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Miles is 4 years old
+</pre>
 </div>
 </div>
 </div>
