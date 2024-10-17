@@ -16,7 +16,11 @@
 | __12__ - 13/09/24     | :material-check: Análise OO e UML - Diagrama de Casos de Uso                                                                                                                                                   |
 | __13__ - 19/09/24     | :material-check:[Classes](../assets/Aulas/Classes_Pacotes.pdf)                                                                                                                                                     |
 | __14__ - 20/09/24     | :material-check: Diagrama de Classes UML                                                                                                                                                                        |
-| __15__ - 26/09/24     | :material-check: AP1 - Apresentação                          |
-| __16__ - 27/09/24     | ----------------------------------------------------------   |
-| __17__ - 03/10/24     | :material-check: AP1 - Python OO ([Notebook](../modelagem/poo/poo.ipynb), [Conceito de OO](../modelagem/poo/Conceitos-basicos-de-OO.pdf) e [Python OO](../modelagem/poo/Python-OO.pdf)                             |
-| __18__ - 04/10/24     | :material-check: AP1 - Python OO                          |
+| __15__ - 26/09/24     | :material-check: AP1 - Apresentação                                                                                                                                                                           |
+| __16__ - 27/09/24     | ----------------------------------------------------------                                                                                                                                                      |
+| __17__ - 03/10/24     | :material-check: Python OO ([Notebook](../modelagem/poo/poo.ipynb), [Conceito de OO](../modelagem/poo/Conceitos-basicos-de-OO.pdf) e [Python OO](../modelagem/poo/Python-OO.pdf)                                         |
+| __18__ - 04/10/24     | :material-check: Python OO                                                                                                                                                                                      |
+| __19__ - 10/10/24     | :material-check: Introdução ao Django OO                                                                                                                                                                                      |
+| __20__ - 11/10/24     | :material-check: Reunião Iquirium - Django OO                                                                                                                                                                                      |
+| __2__ - 18/10/24     | :material-check: Introdução SQL - Sqlite OO                                                                                                                                                                                      |
+| __18__ - 19/10/24     | :material-check: Início do projeto Django no repositório de cada grupo          |
