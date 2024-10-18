@@ -1,5 +1,5 @@
 
-Para criar um **Django REST API** com base nas classes que definimos no diagrama, você pode seguir os passos abaixo. Vamos estruturar o app com as classes principais de **Usuário**, **Atividade**, **Tipo de Atividade**, **Métrica de Atividade** e **Histórico de Atividades**.
+Para criar um **Django REST API** com base nas classes que definimos no diagrama, você pode seguir os passos abaixo. Vamos estruturar o app com as classes principais.
 
 ### 1. **Configuração Inicial do Projeto Django**
 
