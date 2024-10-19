@@ -1,5 +1,7 @@
+Para criar um **Django REST API** com base nas classes que definimos no diagrama, você pode seguir os passos abaixo. Vamos estruturar o app com as classes principais.
 
-Para criar um **Django REST API** com base nas classes que definimos no diagrama, você pode seguir os passos abaixo. Vamos estruturar o app com as classes principais de **Usuário**, **Atividade**, **Tipo de Atividade**, **Métrica de Atividade** e **Histórico de Atividades**.
+Ps:. Não esqueça de sempre criar o ambiente virtual( **ctrl +shift + P => Python Create Enviroment** ) antes de começar qualquer projeto.
+
 
 ### 1. **Configuração Inicial do Projeto Django**
 
@@ -62,3 +64,70 @@ python manage.py createsuperuser
 ```
 localhost:8000/admin
 ```
+
+### 7. Criar o Models
+
+Defina um modelo para representar um empregado:
+
+```python
+from django.db import models
+
+class Employee(models.Model):
+    name = models.CharField(max_length=100)
+    role = models.CharField(max_length=100)**
+    department = models.CharField(max_length=100)**
+
+    def __str__(self):
+        return self.name
+```
+
+Agora aplique novamente o makemigrations para atualizar os models disponíveis no app e o migrate para gerar a tabela no banco
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+### 8. Adicionar ao Painel do Django-Admin
+
+No app/admin.py import a nova classe Employee no Django-Admin
+
+```python
+from django.contrib import admin
+from .models import Employee
+
+admin.site.register(Employee)
+``` 
+
+### 9. Django-Admin
+
+Rode novamente e entre no endereço do Django-Admin
+
+```bash
+python manage.py runserver
+localhost:8000/admin
+```
+
+Para cada model adicionado devemos repetir o makemigrations  e o migrate e adicionarmos ao painel Django-Admin
+
+### 10. Adicione o Department
+```python
+from django.db import models
+
+class Department(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+    
+class Employee(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    role = models.CharField(max_length=100)
+    department = models.ForeignKey(Department, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+```
+    
+    
+
