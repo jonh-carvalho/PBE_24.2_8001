@@ -1,34 +1,55 @@
 Para criar um aplicativo REST Django que inclua a classe `Content`, vamos seguir os passos abaixo:
 
 ### 1. **Configuração Inicial do Projeto Django**
+
 Primeiro, você precisará criar um novo projeto Django e adicionar um app para gerenciar o conteúdo.
 
-1. Crie um novo projeto Django:
+- Adicionar o Virtual Enviroment
+
+```ctrl
+ctrl + shift + P
+```
+
+0. Instalar Django
+
    ```bash
-   django-admin startproject streaming_platform
+   pip install django
+   ```
+1. Crie um novo projeto Django:
+
+   ```bash
+   django-admin startproject streaming_platform .
    cd streaming_platform
    ```
-
 2. Crie um app dentro do projeto:
+
    ```bash
    python manage.py startapp content_app
    ```
 
-3. Adicione o app no arquivo `settings.py`:
-   ```python
+4.0. Instalar Rest Django Framework
+
+```bash
+   pip install djangorestframework
+```
+
+4.1. Adicione o app no arquivo `settings.py`:
+
+```python
    INSTALLED_APPS = [
        # outros apps padrão
        'rest_framework',
        'content_app',
    ]
-   ```
+```
 
-4. Instale o Django REST framework:
+5. Instale o Django REST framework:
    ```bash
    pip install djangorestframework
    ```
 
 ### 2. **Definindo o Modelo `Content`**
+
 No arquivo `content_app/models.py`, vamos definir a classe `Content` conforme o modelo proposto:
 
 ```python
@@ -62,7 +83,36 @@ class Content(models.Model):
   - `content_type` define se o conteúdo é áudio ou vídeo.
   - `file_url` é o campo que contém a URL do arquivo de mídia.
 
+4.2. **Migrar o Banco de Dados**
+Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+4.3. Acesso ao Django Admin
+
+```bash
+python manage.py createsuperuser
+```
+
+4.3. Rodar o nosso sistema
+
+```bash
+python manage.py runserver
+```
+
+4.4. Para visualizar classe content no Django Admin precisamos adicionar o registro no arquivo admin.py do content_app
+
+```python
+from content_app import models
+
+admin.site.register(models.Content)
+```
+
 ### 3. **Serializador (Serializer) para `Content`**
+
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
 
 Crie o arquivo `content_app/serializers.py`:
@@ -78,6 +128,7 @@ class ContentSerializer(serializers.ModelSerializer):
 ```
 
 ### 4. **Views para o `Content`**
+
 No arquivo `content_app/views.py`, crie as views utilizando o Django REST framework para expor a API.
 
 ```python
@@ -100,6 +151,7 @@ class ContentViewSet(viewsets.ModelViewSet):
   - `perform_create` sobrescreve o método `create` para garantir que o criador (`creator`) seja o usuário logado.
 
 ### 5. **URLs para o App**
+
 Crie um arquivo `content_app/urls.py` e defina as rotas para o `ContentViewSet`:
 
 ```python
@@ -125,6 +177,7 @@ urlpatterns = [
 ```
 
 ### 6. **Configurar Autenticação**
+
 Como estamos utilizando o campo `creator` baseado no usuário logado, é importante configurar a autenticação no Django REST framework.
 
 No arquivo `settings.py`, adicione a configuração para o Django REST framework:
@@ -142,6 +195,7 @@ REST_FRAMEWORK = {
 ```
 
 ### 7. **Migrar o Banco de Dados**
+
 Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
 
 ```bash
@@ -150,6 +204,7 @@ python manage.py migrate
 ```
 
 ### 8. **Testando a API**
+
 Agora, você pode testar a API usando ferramentas como o **Postman** ou **curl**. Alguns endpoints disponíveis seriam:
 
 - `GET /api/contents/`: Lista todos os conteúdos.
@@ -159,6 +214,7 @@ Agora, você pode testar a API usando ferramentas como o **Postman** ou **curl**
 - `DELETE /api/contents/<id>/`: Remove um conteúdo (requer autenticação).
 
 ### 9. **Administração no Django Admin**
+
 Para facilitar a visualização dos conteúdos no Django Admin, você pode registrar o modelo `Content` no admin. No arquivo `content_app/admin.py`:
 
 ```python
@@ -171,4 +227,5 @@ admin.site.register(Content)
 Agora, ao acessar o painel de administração do Django, você poderá visualizar e gerenciar os conteúdos.
 
 ### Resumo
+
 Essa implementação cria um app RESTful no Django com suporte à criação, leitura, atualização e exclusão (CRUD) de conteúdos, incluindo autenticação e associação com os criadores. Você pode expandir a aplicação para adicionar funcionalidades adicionais, como filtros ou buscas.
