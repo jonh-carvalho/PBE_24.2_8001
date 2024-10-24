@@ -3,18 +3,30 @@ Para criar um aplicativo REST Django que inclua a classe `Content`, vamos seguir
 ### 1. **Configuração Inicial do Projeto Django**
 Primeiro, você precisará criar um novo projeto Django e adicionar um app para gerenciar o conteúdo.
 
-1. Crie um novo projeto Django:
+- Adicionar o Virtual Enviroment
+
+ctrl +shift + P
+
+0. Instalar Django
    ```bash
-   django-admin startproject streaming_platform
+   pip install django
+   ```
+
+2. Crie um novo projeto Django:
+   ```bash
+   django-admin startproject streaming_platform .
    cd streaming_platform
    ```
 
-2. Crie um app dentro do projeto:
+3. Crie um app dentro do projeto:
    ```bash
    python manage.py startapp content_app
    ```
-
-3. Adicione o app no arquivo `settings.py`:
+4.0. Instalar Rest Django Framework
+   ```bash
+   pip install djangorestframework
+   ```
+4.1. Adicione o app no arquivo `settings.py`:
    ```python
    INSTALLED_APPS = [
        # outros apps padrão
@@ -23,7 +35,7 @@ Primeiro, você precisará criar um novo projeto Django e adicionar um app para 
    ]
    ```
 
-4. Instale o Django REST framework:
+5. Instale o Django REST framework:
    ```bash
    pip install djangorestframework
    ```
@@ -61,6 +73,32 @@ class Content(models.Model):
   - O campo `creator` é uma ForeignKey referenciando o usuário que criou o conteúdo.
   - `content_type` define se o conteúdo é áudio ou vídeo.
   - `file_url` é o campo que contém a URL do arquivo de mídia.
+ 
+4.2. **Migrar o Banco de Dados**
+Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+4.3. Acesso ao Django Admin
+
+```bash
+python manage.py createsuperuser
+```
+4.3. Rodar o nosso sistema
+
+```bash
+python manage.py runserver
+```
+4.4. Para visualizar classe content no Django Admin precisamos adicionar o registro no arquivo admin.py do content_app
+
+```python
+from content_app import models
+
+admin.site.register(models.Content)
+```
+
 
 ### 3. **Serializador (Serializer) para `Content`**
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
