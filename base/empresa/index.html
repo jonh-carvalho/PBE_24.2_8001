@@ -1,0 +1,3428 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../documento_de_visao/">
+      
+      
+        <link rel="next" href="../entrevista/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Empresa - Projeto Back-End</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#member-get-member" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Projeto Back-End" class="md-header__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+      
+  <img src="../../../assets/ibmec_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projeto Back-End
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Empresa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jonh-carvalho/PBE_24.2_8001" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../_Disciplina/aulas/" class="md-tabs__link">
+          
+  
+   Disciplina
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../5w2h/" class="md-tabs__link">
+          
+  
+  Base
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../iteracao/interacao1/" class="md-tabs__link">
+          
+  
+  Iteracao
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelagem/" class="md-tabs__link">
+          
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Projeto Back-End" class="md-nav__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+      
+  <img src="../../../assets/ibmec_logo.png" alt="logo">
+
+    </a>
+    Projeto Back-End
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jonh-carvalho/PBE_24.2_8001" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+     Disciplina
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+             Disciplina
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/aulas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aulas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Versionamento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notebook Jupyter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1" id="__nav_2_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DemoDjango
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            DemoDjango
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/manage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1_2" id="__nav_2_5_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    App
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            App
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/admin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/views/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Views
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1_2_7" id="__nav_2_5_1_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Migrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_5_1_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_1_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Migrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/migrations/0001_initial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0001 initial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/migrations/0002_department_alter_employee_department/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0002 department alter employee department
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/app/migrations/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_1_3" id="__nav_2_5_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/project/__init__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+      init  
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/project/asgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asgi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/project/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/project/urls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Urls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Code/DemoDjango/project/wsgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wsgi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Roteiros
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Roteiros
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/introsqlite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sqlite Sql
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/pysqlite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pysqlite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/sqlite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sqlite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Django
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Django
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/01_Projeto_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 Projeto Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/02_Modelagem_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 Modelagem Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/03_Rest_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 Rest Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/04_Shell_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 Shell Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/05_Consume_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    05 Consume Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/06_Consume_Streaming_Web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    06 Consume Streaming Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Disciplina/Roteiros/Django/Intro%20Django/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro Django
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Base
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Base
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5w2h/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5W2H
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brainstorm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelo de Documento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documento_de_visao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Visão
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Empresa
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Empresa
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#member-get-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      Member Get Member
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Member Get Member">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de Dados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swot-pessoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SWOT Pessoal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedbacks-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedbacks do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedbacks do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      • Banco de Dados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      • Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regras de Negócio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acesso-a-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Acesso à Funcionalidade:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Tipos de Feedback:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envio-de-feedback-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Envio de Feedback Parcial:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirmacao-de-envio" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Confirmação de Envio:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-feedbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Número de Feedbacks:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedbacks-entre-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedbacks entre Usuários
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedbacks entre Usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-do-usuario_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-tecnicos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Técnicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Técnicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-e-autorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autenticação e Autorização:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrevista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrevista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapa_mental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapas Mentais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pesquisa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pesquisa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipo_alta_fidelidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protótipo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Iteracao
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Iteracao
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracao/interacao7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iteração 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/das/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/diagrama_de_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrama de Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Casos de Uso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Casos%20de%20Uso/Exemplo%20Biblioteca%20Digital/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemplo Biblioteca Digital
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Casos%20de%20Uso/casosdeuso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrama de Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Classes/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Poo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Poo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/poo/ProceduralPoo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProceduralPoo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/poo/kyvi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kyvi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/poo/poo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/poo/pooaula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução ao Python OO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/poo/proceduralxpoo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proceduralxpoo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#member-get-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      Member Get Member
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Member Get Member">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de Dados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swot-pessoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SWOT Pessoal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedbacks-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedbacks do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedbacks do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      • Banco de Dados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      • Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regras de Negócio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acesso-a-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Acesso à Funcionalidade:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Tipos de Feedback:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envio-de-feedback-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Envio de Feedback Parcial:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirmacao-de-envio" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Confirmação de Envio:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-feedbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      * Número de Feedbacks:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedbacks-entre-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedbacks entre Usuários
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedbacks entre Usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-do-usuario_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-tecnicos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Técnicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Técnicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-e-autorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autenticação e Autorização:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras de Negócio
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Empresa</h1>
+
+<h2 id="member-get-member">Member Get Member</h2>
+<h3 id="resumo">Resumo</h3>
+<p>A funcionalidade Member Get Member permite que os usuários da plataforma recomendem e convidem novos membros para se cadastrarem.
+Através de um sistema de convites, os usuários atuais podem compartilhar links personalizados para novos usuários, incentivando o crescimento da comunidade da plataforma.</p>
+<h3 id="objetivo">Objetivo</h3>
+<p>Incentivar o crescimento orgânico da plataforma, permitindo que usuários existentes convidem novos membros para se cadastrarem. Além disso, a funcionalidade busca aumentar o engajamento ao oferecer recompensas tanto para quem indica quanto para quem é convidado, promovendo uma rede colaborativa de desenvolvimento profissional.
+Jornadas do Usuário</p>
+<ol>
+<li>Convidar um Novo Membro</li>
+<li>Receber um Convite e Cadastrar-se
+   Requisitos Técnicos</li>
+</ol>
+<h3 id="banco-de-dados">Banco de Dados:</h3>
+<p>• Armazenar o link de convite personalizado associado ao ID do usuário
+• que envia o convite.
+• Registrar o vínculo entre o usuário que enviou o convite e o novo
+• usuário que se cadastrou através do link.
+• Manter histórico de convites enviados e aceitos para cada usuário.</p>
+<h3 id="frontend">Frontend:</h3>
+<p>• Interface para exibir o link de convite personalizado para o usuário.
+• Botões de compartilhamento integrados para redes sociais e email.
+• Página de cadastro que identifica o convite e exibe o nome do usuário
+• que enviou o convite.</p>
+<h3 id="backend">Backend:</h3>
+<p>• APIs para gerar e gerenciar links de convite personalizados.
+• Validação do link de convite durante o processo de cadastro para garantir que o novo usuário seja corretamente vinculado ao usuário que enviou o convite.
+• Controle de limites de convites por usuário, se aplicável.
+• Autenticação e Autorização:
+• Garantir que apenas usuários autenticados possam acessar e gerar links de convite.</p>
+<p>Verificar a validade do link de convite durante o cadastro do novo
+usuário (evitar o uso de links expirados ou inválidos).</p>
+<h2 id="_1"></h2>
+<p>Regras de Negócio</p>
+<ol>
+<li>Geração de Links de Convite:</li>
+<li>Limite de Convites:</li>
+<li>Validade dos Links de Convite:</li>
+<li>Vinculação de Convites:</li>
+<li>Cadastro do Convidado:</li>
+<li>Sem Benefícios Imediatos:</li>
+</ol>
+<h2 id="swot-pessoal">SWOT Pessoal</h2>
+<h2 id="resumo_1">Resumo</h2>
+<p>A funcionalidade SWOT Pessoal permite que o usuário realize uma análise SWOT (Strengths, Weaknesses, Opportunities, Threats) de sua própria carreira, identificando seus pontos fortes, pontos fracos, oportunidades de crescimento e ameaças que podem impactar seu desenvolvimento profissional.</p>
+<h3 id="objetivo_1">Objetivo</h3>
+<p>Permitir que o usuário identifique e avalie seus pontos fortes, fraquezas, oportunidades e ameaças em relação à sua carreira, facilitando a criação de um plano de ação alinhado ao seu desenvolvimento profissional. Estes dados serão utilizados para auxiliar o sistema na personalização do plano de carreira, missões e outros recursos.</p>
+<h3 id="jornadas-do-usuario">Jornadas do Usuário</h3>
+<p>1. Primeira Utilização (Criação da Matriz SWOT) </p>
+<ol>
+<li>
+<p>O usuário acessa a funcionalidade SWOT Pessoal no menu da plataforma. </p>
+</li>
+<li>
+<p>A interface apresenta uma breve introdução sobre o que é a análise SWOT
+e seus benefícios. </p>
+</li>
+<li>
+<p>O usuário responde a perguntas orientadoras ou insere informações
+diretamente nas quatro categorias: Forças, Fraquezas, Oportunidades e
+Ameaças. </p>
+</li>
+<li>
+<p>Após preencher todos os campos, o usuário revisa as respostas e confirma
+a conclusão da análise. </p>
+</li>
+<li>
+<p>A matriz SWOT é gerada e apresentada ao usuário em um formato visual. </p>
+</li>
+<li>
+<p>O usuário pode acessar a análise SWOT finalizada em sua área pessoal.</p>
+</li>
+<li>
+<p>Revisão da Matriz SWOT </p>
+</li>
+<li>
+<p>O usuário acessa a funcionalidade e visualiza sua matriz SWOT anterior. </p>
+</li>
+<li>
+<p>A plataforma oferece a opção de atualizar as informações nas quatro
+categorias (Forças, Fraquezas, Oportunidades e Ameaças). </p>
+</li>
+<li>
+<p>O usuário revisa e confirma as novas entradas.</p>
+</li>
+<li>
+<p>A matriz atualizada é gerada e substitui a anterior.</p>
+</li>
+</ol>
+<p>Requisitos Técnicos</p>
+<p>Banco de Dados:</p>
+<p>Armazenamento de dados da análise SWOT: cada análise SWOT deve ser
+associada ao perfil do usuário, com campos para Forças, Fraquezas,
+Oportunidades e Ameaças.
+Histórico de análises: manter um registro das análises anteriores, caso o
+usuário queira comparar versões antigas.</p>
+<p>Frontend:</p>
+<p>Criação de uma interface intuitiva e responsiva para o preenchimento das
+categorias da análise SWOT.
+Exibição visual da matriz SWOT em formato de quadrantes, destacando os
+itens inseridos pelo usuário.</p>
+<p>Backend:</p>
+<p>APIs para o envio e armazenamento das informações preenchidas pelo
+usuário (Forças, Fraquezas, Oportunidades e Ameaças).
+Manter a segurança dos dados do usuário, garantindo que apenas ele
+possa acessar sua análise SWOT.
+Regras de Negócio 19. Periodicidade da Análise:
+O usuário pode realizar uma nova análise SWOT a cada x dias
+(configurável). Durante esse intervalo, o usuário pode visualizar a análise
+anterior, mas não pode editá-la até que o período configurado seja
+completado. 20. Exclusividade da Análise:
+Cada análise SWOT é pessoal e exclusiva ao usuário. Nem outros usuários
+nem administradores terão acesso às análises SWOT de terceiros,
+garantindo total privacidade das informações. 21. Preenchimento Parcial:
+O usuário pode salvar uma análise SWOT mesmo que ela não esteja
+totalmente preenchida. A análise será considerada como "Pendente" até
+que seja marcada como “Concluída”. O usuário poderá voltar a qualquer
+momento para finalizar e marcar a análise como "Concluída". 22. Histórico de Análises:
+O sistema deve manter um histórico das análises SWOT realizadas pelo
+usuário. O usuário pode consultar as análises anteriores.</p>
+<h2 id="feedbacks-do-produto">Feedbacks do Produto</h2>
+<h3 id="resumo_2">Resumo</h3>
+<p>A funcionalidade Captura de Feedbacks sobre o Produto permitirá que os
+usuários forneçam feedback diretamente na plataforma sobre sua
+experiência de uso, funcionalidades, desempenho e sugestões de melhoria. A
+ferramenta será integrada de forma simples e acessível, com opções de
+feedback direto ou através de questionários rápidos.</p>
+<p>Objetivo</p>
+<p>Esses feedbacks serão armazenados para análise pela equipe da plataforma,
+ajudando a identificar áreas de melhoria e possíveis novas funcionalidades a
+serem desenvolvidas.
+Jornadas do Usuário 23. Envio de Feedback Espontâneo 24. O usuário acessa a seção Feedback no menu da plataforma. 25. A plataforma exibe um formulário simples para o usuário relatar sua experiência, incluindo campos opcionais para:
+• Comentários gerais.
+• Sugestões de melhoria.
+• Relato de problemas técnicos ou erros. 26. O usuário preenche os campos desejados e envia o feedback. 27. A plataforma confirma o recebimento do feedback e exibe uma mensagem 28. de agradecimento.</p>
+<h3 id="requisitos-tecnicos">Requisitos Técnicos</h3>
+<h3 id="banco-de-dados_1">• Banco de Dados:</h3>
+<p>o Armazenar os feedbacks enviados pelos usuários, incluindo:
+ ID do usuário.
+ Texto do feedback.
+ Tipo de feedback (sugestão, comentário, relato de erro).
+ Data e hora do envio.
+o Garantir que os feedbacks sejam associados ao perfil do usuário para
+rastreabilidade e análise futura.</p>
+<h3 id="frontend_1">• Frontend:</h3>
+<p>o Interface de formulário simples e intuitivo para o envio de feedback.
+o Campos opcionais para tipos de feedback, como:
+ Comentários gerais.
+ Sugestões de melhorias.
+ Relatos de erros ou problemas técnicos.
+o Mensagem de confirmação após o envio do feedback.</p>
+<h3 id="backend_1">Backend:</h3>
+<p>o APIs para receber, processar e armazenar os feedbacks enviados pelos usuários.
+o Garantir que os feedbacks sejam armazenados de forma segura e possam ser acessados pela equipe de análise.
+Autenticação e Autorização:
+• Garantir que apenas usuários autenticados possam enviar feedbacks,
+associando cada feedback ao perfil do usuário.</p>
+<h2 id="regras-de-negocio">Regras de Negócio</h2>
+<h3 id="acesso-a-funcionalidade">* Acesso à Funcionalidade:</h3>
+<p>Apenas usuários autenticados podem enviar feedbacks pela plataforma.</p>
+<h3 id="tipos-de-feedback">* Tipos de Feedback:</h3>
+<p>• O feedback pode ser classificado em categorias opcionais, como:
+• Comentários gerais.
+• Sugestões de melhoria.
+• Relato de erros ou problemas técnicos.</p>
+<h3 id="envio-de-feedback-parcial">* Envio de Feedback Parcial:</h3>
+<p>• O usuário não é obrigado a preencher todos os campos do feedback. Se desejar, pode deixar alguns campos em branco e enviar apenas um comentário.</p>
+<h3 id="confirmacao-de-envio">* Confirmação de Envio:</h3>
+<p>Após o envio do feedback, o sistema deve exibir uma mensagem de confirmação, assegurando o usuário que o feedback foi recebido.</p>
+<h3 id="numero-de-feedbacks">* Número de Feedbacks:</h3>
+<p>Não há limite para a quantidade de feedbacks que um usuário pode enviar. O usuário pode fornecer feedbacks múltiplos a qualquer momento.  </p>
+<h2 id="feedbacks-entre-usuarios">Feedbacks entre Usuários</h2>
+<h3 id="resumo_3">Resumo</h3>
+<p>A funcionalidade Envio e Recebimento de Feedbacks entre Usuários permitirá
+que os usuários da plataforma enviem e recebam feedbacks uns dos
+outros, promovendo uma cultura de colaboração e desenvolvimento pessoal.
+Os feedbacks podem ser solicitados ou enviados espontaneamente,
+abrangendo aspectos como competências, comportamentos ou atividades
+realizadas. Essa funcionalidade ajudará os usuários a obter insights valiosos de
+colegas, mentores ou outros membros da comunidade, facilitando o
+crescimento contínuo e o autodesenvolvimento.</p>
+<h3 id="objetivo_2">Objetivo</h3>
+<p>Facilitar a troca de feedbacks entre os usuários da plataforma, permitindo que
+eles ofereçam e recebam avaliações construtivas sobre suas competências e
+comportamentos profissionais. A funcionalidade busca promover o
+crescimento contínuo e o autodesenvolvimento, fortalecendo a interação e
+colaboração entre os membros da comunidade.</p>
+<h3 id="jornadas-do-usuario_1">Jornadas do Usuário</h3>
+<p>1. Solicitar Feedback de Outro Usuário</p>
+<ul>
+<li>O usuário acessa a seção Feedback entre Usuários e escolhe a opção
+  "Solicitar Feedback".</li>
+<li>
+<p>O usuário seleciona o destinatário (um colega ou mentor da plataforma) e
+  define o tipo de feedback que deseja receber (ex.: feedback sobre
+  competências, comportamentos, ou uma atividade específica).</p>
+</li>
+<li>
+<p>O solicitante pode incluir uma mensagem opcional explicando o contexto
+  ou o que gostaria de receber como retorno.</p>
+</li>
+<li>Após enviar o feedback, o solicitante visualiza uma mensagem informando
+  que o feedback foi recebido.</li>
+</ul>
+<p>2\. Enviar Feedback Espontâneo a Outro Usuário</p>
+<ul>
+<li>O usuário acessa a seção Feedback entre Usuários e escolhe a opção
+  "Enviar Feedback".</li>
+<li>
+<p>O usuário seleciona o destinatário e define o tipo de feedback
+  (competências, comportamentos, ou outra área de foco).</p>
+</li>
+<li>
+<p>O usuário preenche o feedback e envia diretamente, sem a necessidade de
+  solicitação prévia.</p>
+</li>
+<li>O destinatário recebe o feedback em sua área pessoal.</li>
+</ul>
+<p>3. Visualizar Feedback Recebido</p>
+<ul>
+<li>O usuário acessa sua área pessoal e visualiza os feedbacks recebidos.</li>
+<li>O usuário pode consultar o histórico de feedbacks e responder ao
+  feedback, se desejar, para iniciar uma conversa ou pedir mais detalhes.</li>
+</ul>
+<p>4\. Reportar Feedback Recebido</p>
+<ul>
+<li>O usuário acessa a seção de Feedbacks Recebidos e visualiza um
+  feedback que considera ofensivo ou inapropriado.</li>
+<li>
+<p>Na interface de visualização do feedback, o usuário encontra a opção
+  "Reportar".</p>
+</li>
+<li>
+<p>O usuário clica na opção "Reportar" e seleciona o motivo do report (ex.:
+  conteúdo ofensivo, impróprio, ou fora das diretrizes da plataforma).</p>
+</li>
+<li>
+<p>O sistema exibe uma confirmação de que o feedback foi reportado e será
+  revisado pela equipe da plataforma.</p>
+</li>
+<li>
+<p>A equipe de moderação recebe o report, revisa o conteúdo, e toma as
+  medidas cabíveis (ex.: remoção do feedback, aviso ou suspensão do
+  usuário que enviou o feedback).</p>
+</li>
+<li>O usuário que reportou o feedback pode ser informado do resultado da
+  revisão, dependendo das diretrizes da plataforma.</li>
+</ul>
+<h2 id="requisitos-tecnicos_1">Requisitos Técnicos</h2>
+<p>Banco de Dados:</p>
+<p>• Armazenar todos os feedbacks enviados entre os usuários, incluindo:
+o ID do remetente (usuário que enviou o feedback).
+o ID do destinatário (usuário que recebeu o feedback).
+o Tipo de feedback (competências, comportamentos, atividade
+o específica, etc.).
+o Conteúdo do feedback (texto inserido pelo remetente).
+o Data e hora de envio.</p>
+<p>• Armazenar logs de report de feedbacks, incluindo:</p>
+<p>o ID do feedback reportado.
+o Motivo do report (conteúdo ofensivo, impróprio, etc.).
+o ID do usuário que reportou o feedback.
+o Status do report (pendente, revisado, ação tomada).</p>
+<h3 id="frontend_2">Frontend:</h3>
+<p>• Interface para envio de feedbacks com opções para:</p>
+<p>o Seleção do destinatário.
+o Escolha do tipo de feedback (competências, comportamentos,
+o etc.).
+o Campo de texto para a mensagem do feedback.</p>
+<p>• Interface para solicitação de feedback, onde o usuário pode selecionaro destinatário e especificar o contexto da solicitação.</p>
+<p>• Visualização dos feedbacks recebidos em uma área privada, com aopção de responder ao feedback.</p>
+<p>• Botão "Reportar" disponível na visualização de feedbacks recebidos,permitindo que o usuário selecione o motivo do report e envie asolicitação de revisão.</p>
+<h3 id="backend_2">Backend:</h3>
+<p>• APIs para:</p>
+<p>o Envio de feedbacks entre usuários, garantindo que o feedback seja
+o armazenado de forma segura e privada.
+o Solicitação de feedback com as opções para selecionar o
+o destinatário e o contexto.
+o Gerenciamento de feedbacks recebidos, incluindo o histórico de
+o feedbacks.
+o Processamento de reports de feedbacks, registrando o motivo do
+o report.
+o Sistema de moderação que permite à equipe revisar feedbacks
+o reportados e tomar as medidas cabíveis (ex.: remoção do feedback
+o ou aviso ao usuário).</p>
+<p>• Garantir a segurança dos dados, assegurando que somente oremetente e o destinatário possam acessar o conteúdo do feedback.</p>
+<h3 id="autenticacao-e-autorizacao">Autenticação e Autorização:</h3>
+<p>• Garantir que apenas usuários autenticados possam enviar, solicitar, visualizar e reportar feedbacks.
+• Implementar regras de autorização para que apenas o destinatário tenha acesso ao feedback recebido e apenas o remetente ao feedback enviado.</p>
+<h2 id="regras-de-negocio_1"><strong>Regras de Negócio</strong></h2>
+<ol>
+<li>Privacidade dos Feedbacks:
+   • Todos os feedbacks são estritamente privados, visíveis apenas pelo remetente (quem enviou) e pelo destinatário (quem recebeu). Nenhum outro usuário, incluindo administradores, tem acesso aos feedbacks trocados entre os usuários.</li>
+<li>Envio de Feedback:
+   Qualquer usuário autenticado pode enviar feedback espontâneo a outro usuário, selecionando o destinatário dentro da plataforma e preenchendo o formulário de feedback.
+   O feedback deve estar relacionado a competências, comportamentos, ou atividades específicas, com a opção de adicionar uma mensagem contextual.</li>
+<li>Solicitação de Feedback:
+   • Qualquer usuário autenticado pode solicitar feedback de outro usuário, especificando o tipo de feedback desejado (competências, comportamentos, etc.) e o contexto da solicitação.
+   • O destinatário tem a liberdade de aceitar ou ignorar a solicitação de feedback sem penalidades.</li>
+<li>Limites de Feedbacks:</li>
+</ol>
+<p>• Não há limites definidos para o número de feedbacks que um usuáriopode enviar ou receber. Os usuários podem fornecer feedbacks múltiplos de acordo com as necessidades.</p>
+<ol>
+<li>Respostas aos Feedbacks:</li>
+</ol>
+<p>• Após receber um feedback, o destinatário pode responder diretamente ao remetente para agradecer ou solicitar mais detalhes. A resposta também será privada e apenas visível para o remetente original e o destinatário.</p>
+<ol>
+<li>Moderação de Conteúdo:</li>
+</ol>
+<p>• Todos os feedbacks devem seguir as diretrizes de uso da plataforma. Qualquer conteúdo ofensivo, impróprio ou fora das normas pode ser reportado pelo destinatário.
+• O usuário que recebeu um feedback pode reportá-lo como ofensivo ou impróprio. O sistema registrará o report e o feedback será revisado pela equipe da plataforma.
+• A equipe de moderação será responsável por revisar os feedbacks reportados e tomar as medidas cabíveis, como remoção do feedback ou aplicação de avisos ao usuário que enviou o conteúdo reportado.</p>
+<ol>
+<li>Processo de Report:</li>
+</ol>
+<p>• O destinatário de um feedback pode reportar o conteúdo se considerar que ele viola as diretrizes da plataforma.
+• Após o report, o sistema registra o motivo.
+• A equipe de moderação revisa o feedback e decide se uma ação é necessária (remoção ou advertência ao remetente).
+• O usuário que reportou o feedback pode ser informado do resultado da moderação, dependendo das diretrizes da plataforma.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../documento_de_visao/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Documento de Visão">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Documento de Visão
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../entrevista/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Entrevista">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Entrevista
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4></h4>
+<p></p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceitar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gerenciar configurações</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
