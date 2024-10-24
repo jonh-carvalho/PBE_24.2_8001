@@ -5,7 +5,7 @@ Primeiro, você precisará criar um novo projeto Django e adicionar um app para 
 
 1. Crie um novo projeto Django:
    ```bash
-   django-admin startproject streaming_platform
+   django-admin startproject streaming_platform .
    cd streaming_platform
    ```
 
