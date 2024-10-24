@@ -91,6 +91,14 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+4.4. Para visualizar classe content no Django Admin precisamos adicionar o registro no arquivo admin.py do content_app
+
+```python
+from content_app import models
+
+admin.site.register(models.Content)
+```
+
 
 ### 3. **Serializador (Serializer) para `Content`**
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
