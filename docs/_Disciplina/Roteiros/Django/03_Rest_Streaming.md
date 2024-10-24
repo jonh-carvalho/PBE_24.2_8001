@@ -22,8 +22,11 @@ ctrl +shift + P
    ```bash
    python manage.py startapp content_app
    ```
-
-4. Adicione o app no arquivo `settings.py`:
+4.0. Instalar Rest Django Framework
+   ```bash
+   pip install djangorestframework
+   ```
+4.1. Adicione o app no arquivo `settings.py`:
    ```python
    INSTALLED_APPS = [
        # outros apps padrão
