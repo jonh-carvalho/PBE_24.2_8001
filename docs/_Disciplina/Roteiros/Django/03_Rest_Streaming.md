@@ -81,6 +81,11 @@ Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
 python manage.py makemigrations
 python manage.py migrate
 ```
+4.3. Acesso ao Django Admin
+
+```bash
+python manage.py createsuperuser
+```
 
 ### 3. **Serializador (Serializer) para `Content`**
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
