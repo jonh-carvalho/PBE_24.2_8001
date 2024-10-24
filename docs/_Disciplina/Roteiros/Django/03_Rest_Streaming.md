@@ -73,6 +73,14 @@ class Content(models.Model):
   - O campo `creator` é uma ForeignKey referenciando o usuário que criou o conteúdo.
   - `content_type` define se o conteúdo é áudio ou vídeo.
   - `file_url` é o campo que contém a URL do arquivo de mídia.
+ 
+4.2. **Migrar o Banco de Dados**
+Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ### 3. **Serializador (Serializer) para `Content`**
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
