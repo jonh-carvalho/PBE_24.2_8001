@@ -86,6 +86,11 @@ python manage.py migrate
 ```bash
 python manage.py createsuperuser
 ```
+4.3. Rodar o nosso sistema
+
+```bash
+python manage.py runserver
+```
 
 ### 3. **Serializador (Serializer) para `Content`**
 No Django REST, precisamos de um serializador para transformar o modelo em um formato JSON que possa ser exposto via API.
