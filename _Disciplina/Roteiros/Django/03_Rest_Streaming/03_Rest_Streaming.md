@@ -4,36 +4,37 @@ Para criar um aplicativo REST Django que inclua a classe `Content`, vamos seguir
 
 Primeiro, você precisará criar um novo projeto Django e adicionar um app para gerenciar o conteúdo.
 
-- Adicionar o Virtual Enviroment
+1. Adicionar o Virtual Enviroment
 
 ```ctrl
 ctrl + shift + P
 ```
 
-0. Instalar Django
-
-   ```bash
-   pip install django
-   ```
-1. Crie um novo projeto Django:
-
-   ```bash
-   django-admin startproject streaming_platform .
-   cd streaming_platform
-   ```
-2. Crie um app dentro do projeto:
-
-   ```bash
-   python manage.py startapp content_app
-   ```
-
-4.0. Instalar Rest Django Framework
+2. Instalar Django
 
 ```bash
-   pip install djangorestframework
+pip install django
 ```
 
-4.1. Adicione o app no arquivo `settings.py`:
+3. Crie um novo projeto Django:
+
+```bash
+django-admin startproject streaming_platform .
+```
+
+4. Crie um app dentro do projeto:
+
+```bash
+python manage.py startapp content_app
+```
+
+5.  Instalar Rest Django Framework
+
+```bash
+pip install djangorestframework
+```
+
+6. Adicione o app no arquivo `settings.py`:
 
 ```python
    INSTALLED_APPS = [
@@ -42,11 +43,6 @@ ctrl + shift + P
        'content_app',
    ]
 ```
-
-5. Instale o Django REST framework:
-   ```bash
-   pip install djangorestframework
-   ```
 
 ### 2. **Definindo o Modelo `Content`**
 
@@ -83,7 +79,7 @@ class Content(models.Model):
   - `content_type` define se o conteúdo é áudio ou vídeo.
   - `file_url` é o campo que contém a URL do arquivo de mídia.
 
-4.2. **Migrar o Banco de Dados**
+2.1 **Migrar o Banco de Dados**
 Para aplicar as mudanças do modelo no banco de dados, execute as migrações:
 
 ```bash
@@ -91,19 +87,19 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-4.3. Acesso ao Django Admin
+2.2. Acesso ao Django Admin
 
 ```bash
 python manage.py createsuperuser
 ```
 
-4.3. Rodar o nosso sistema
+2.3. Rodar o nosso sistema
 
 ```bash
 python manage.py runserver
 ```
 
-4.4. Para visualizar classe content no Django Admin precisamos adicionar o registro no arquivo admin.py do content_app
+2.4. Para visualizar classe content no Django Admin precisamos adicionar o registro no arquivo admin.py do content_app
 
 ```python
 from content_app import models
