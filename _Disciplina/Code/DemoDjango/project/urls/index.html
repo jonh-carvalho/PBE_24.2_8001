@@ -1335,6 +1335,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/07_Admin_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 Admin Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../Roteiros/Django/Intro%20Django/" class="md-nav__link">
         
   
@@ -2706,7 +2727,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dc25d3b1">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0cba1261">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2767,7 +2788,7 @@ from django.urls import path</div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=da0bb505">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8735912f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2811,19 +2832,19 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 2</span>
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span>     path(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">admin/</span><span style="color: rgb(175,0,0)">'</span>, <span class="ansi-yellow-bg">admin</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">site</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">urls</span>),
 <span class="ansi-green-fg">      3</span> ]
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\utils\functional.py:251</span>, in <span class="ansi-cyan-fg">new_method_proxy.&lt;locals&gt;.inner</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\utils\functional.py:251</span>, in <span class="ansi-cyan-fg">new_method_proxy.&lt;locals&gt;.inner</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args)</span>
 <span class="ansi-green-fg">    249</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">inner</span>(<span style="color: rgb(0,135,0)">self</span>, <span style="color: rgb(98,98,98)">*</span>args):
 <span class="ansi-green-fg">    250</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (_wrapped <span style="color: rgb(98,98,98)">:=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> empty:
 <span class="ansi-green-intense-fg ansi-bold">--&gt; 251</span>         <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_setup</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">    252</span>         _wrapped <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped
 <span class="ansi-green-fg">    253</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> func(_wrapped, <span style="color: rgb(98,98,98)">*</span>args)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\contrib\admin\sites.py:605</span>, in <span class="ansi-cyan-fg">DefaultAdminSite._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\contrib\admin\sites.py:605</span>, in <span class="ansi-cyan-fg">DefaultAdminSite._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
 <span class="ansi-green-fg">    604</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_setup</span>(<span style="color: rgb(0,135,0)">self</span>):
 <span class="ansi-green-intense-fg ansi-bold">--&gt; 605</span>     AdminSiteClass <span style="color: rgb(98,98,98)">=</span> import_string(<span class="ansi-yellow-bg">apps</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get_app_config</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">admin</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span><span style="color: rgb(98,98,98)">.</span>default_site)
 <span class="ansi-green-fg">    606</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped <span style="color: rgb(98,98,98)">=</span> AdminSiteClass()
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\apps\registry.py:156</span>, in <span class="ansi-cyan-fg">Apps.get_app_config</span><span class="ansi-blue-intense-fg ansi-bold">(self, app_label)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\apps\registry.py:156</span>, in <span class="ansi-cyan-fg">Apps.get_app_config</span><span class="ansi-blue-intense-fg ansi-bold">(self, app_label)</span>
 <span class="ansi-green-fg">    150</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">get_app_config</span>(<span style="color: rgb(0,135,0)">self</span>, app_label):
 <span class="ansi-green-fg">    151</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">"""</span>
 <span class="ansi-green-fg">    152</span> <span style="color: rgb(175,0,0)">    Import applications and returns an app config for the given label.</span>
@@ -2834,7 +2855,7 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 <span class="ansi-green-fg">    157</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
 <span class="ansi-green-fg">    158</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>app_configs[app_label]
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\apps\registry.py:137</span>, in <span class="ansi-cyan-fg">Apps.check_apps_ready</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\apps\registry.py:137</span>, in <span class="ansi-cyan-fg">Apps.check_apps_ready</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
 <span class="ansi-green-fg">    132</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">django</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">conf</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> settings
 <span class="ansi-green-fg">    134</span> <span style="color: rgb(95,135,135)"># If "not ready" is due to unconfigured settings, accessing</span>
 <span class="ansi-green-fg">    135</span> <span style="color: rgb(95,135,135)"># INSTALLED_APPS raises a more helpful ImproperlyConfigured</span>
@@ -2842,14 +2863,14 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 <span class="ansi-green-intense-fg ansi-bold">--&gt; 137</span> <span class="ansi-yellow-bg">settings</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">INSTALLED_APPS</span>
 <span class="ansi-green-fg">    138</span> <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> AppRegistryNotReady(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Apps aren</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">t loaded yet.</span><span style="color: rgb(175,0,0)">"</span>)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\conf\__init__.py:81</span>, in <span class="ansi-cyan-fg">LazySettings.__getattr__</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\conf\__init__.py:81</span>, in <span class="ansi-cyan-fg">LazySettings.__getattr__</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
 <span class="ansi-green-fg">     79</span> <span style="color: rgb(175,0,0)">"""Return the value of a setting and cache it in self.__dict__."""</span>
 <span class="ansi-green-fg">     80</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (_wrapped <span style="color: rgb(98,98,98)">:=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> empty:
 <span class="ansi-green-intense-fg ansi-bold">---&gt; 81</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_setup</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">     82</span>     _wrapped <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped
 <span class="ansi-green-fg">     83</span> val <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(_wrapped, name)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\conf\__init__.py:61</span>, in <span class="ansi-cyan-fg">LazySettings._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\conf\__init__.py:61</span>, in <span class="ansi-cyan-fg">LazySettings._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
 <span class="ansi-green-fg">     59</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> settings_module:
 <span class="ansi-green-fg">     60</span>     desc <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">setting </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">"</span> <span style="color: rgb(98,98,98)">%</span> name) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> name <span class="ansi-bold" style="color: rgb(0,135,0)">else</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">settings</span><span style="color: rgb(175,0,0)">"</span>
 <span class="ansi-green-intense-fg ansi-bold">---&gt; 61</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> ImproperlyConfigured(
