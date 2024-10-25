@@ -4,37 +4,37 @@ Para criar um aplicativo REST Django que inclua a classe `Content`, vamos seguir
 
 Primeiro, você precisará criar um novo projeto Django e adicionar um app para gerenciar o conteúdo.
 
-1. Adicionar o Virtual Enviroment
+1\. Adicionar o Virtual Enviroment
 
 ```ctrl
 ctrl + shift + P
 ```
 
-2. Instalar Django
+2\. Instalar Django
 
 ```bash
 pip install django
 ```
 
-3. Crie um novo projeto Django:
+3\. Crie um novo projeto Django:
 
 ```bash
 django-admin startproject streaming_platform .
 ```
 
-4. Crie um app dentro do projeto:
+4\. Crie um app dentro do projeto:
 
 ```bash
 python manage.py startapp content_app
 ```
 
-5.  Instalar Rest Django Framework
+5\. Instalar Rest Django Framework
 
 ```bash
 pip install djangorestframework
 ```
 
-6. Adicione o app no arquivo `settings.py`:
+6\. Adicione o app no arquivo `settings.py`:
 
 ```python
    INSTALLED_APPS = [
