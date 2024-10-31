@@ -2512,34 +2512,22 @@
 <p>Para criar um aplicativo REST Django que inclua a classe <code>Content</code>, vamos seguir os passos abaixo:</p>
 <h3 id="1-configuracao-inicial-do-projeto-django">1. <strong>Configuração Inicial do Projeto Django</strong></h3>
 <p>Primeiro, você precisará criar um novo projeto Django e adicionar um app para gerenciar o conteúdo.</p>
-<ol>
-<li>Adicionar o Virtual Enviroment</li>
-</ol>
+<p>1. Adicionar o Virtual Enviroment</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ctrl + shift + P
 </span></code></pre></div>
-<ol>
-<li>Instalar Django</li>
-</ol>
+<p>2. Instalar Django</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>django
 </span></code></pre></div>
-<ol>
-<li>Crie um novo projeto Django:</li>
-</ol>
+<p>3. Crie um novo projeto Django:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>django-admin<span class="w"> </span>startproject<span class="w"> </span>streaming_platform<span class="w"> </span>.
 </span></code></pre></div>
-<ol>
-<li>Crie um app dentro do projeto:</li>
-</ol>
+<p>4. Crie um app dentro do projeto:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>startapp<span class="w"> </span>content_app
 </span></code></pre></div>
-<ol>
-<li>Instalar Rest Django Framework</li>
-</ol>
+<p>5. Instalar Rest Django Framework</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>djangorestframework
 </span></code></pre></div>
-<ol>
-<li>Adicione o app no arquivo <code>settings.py</code>:</li>
-</ol>
+<p>6. Adicione o app no arquivo <code>settings.py</code>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>   <span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>       <span class="c1"># outros apps padrão</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>       <span class="s1">&#39;rest_framework&#39;</span><span class="p">,</span>
