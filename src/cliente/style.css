@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+}
+.content-list {
+    margin-top: 20px;
+}
+.content-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content-list th, .content-list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section input, .form-section button {
+    padding: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Conteúdo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Conteúdos Disponíveis</h1>
+
+    <!-- Formulário para adicionar conteúdo -->
+    <div class="form-section">
+        <h2>Adicionar Novo Conteúdo</h2>
+        <form id="contentForm">
+            <input type="text" id="title" placeholder="Título" required>
+            <input type="text" id="description" placeholder="Descrição" required>
+            <input type="url" id="file_url" placeholder="URL do arquivo" required>
+            <input type="url" id="thumbnail_url" placeholder="URL da miniatura" >
+            <select id="content_type">
+                <option value="video">Vídeo</option>
+                <option value="audio">Áudio</option>
+            </select>
+            <label for="is_public">Público?</label>
+            <input type="checkbox" id="is_public" checked>
+            <input type="text" id="creator" value="1" placeholder="Criador Admin = 1" required> 
+            <button type="submit">Adicionar Conteúdo</button>
+        </form>
+    </div>
+
+    <!-- Listagem de conteúdos -->
+    <div class="content-list">
+        <h2>Lista de Conteúdos</h2>
+        <table id="contentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Público</th>
+                    <th>Criador</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Conteúdos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
