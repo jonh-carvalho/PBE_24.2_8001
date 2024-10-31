@@ -18,35 +18,7 @@ Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` d
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App de Conteúdo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        .content-list {
-            margin-top: 20px;
-        }
-        .content-list table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .content-list th, .content-list td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        .form-section {
-            margin-bottom: 20px;
-        }
-        .form-section input, .form-section button {
-            padding: 10px;
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -59,13 +31,14 @@ Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` d
             <input type="text" id="title" placeholder="Título" required>
             <input type="text" id="description" placeholder="Descrição" required>
             <input type="url" id="file_url" placeholder="URL do arquivo" required>
-            <input type="url" id="thumbnail_url" placeholder="URL da miniatura" required>
+            <input type="url" id="thumbnail_url" placeholder="URL da miniatura" >
             <select id="content_type">
                 <option value="video">Vídeo</option>
                 <option value="audio">Áudio</option>
             </select>
             <label for="is_public">Público?</label>
             <input type="checkbox" id="is_public" checked>
+            <input type="text" id="creator" value="1" placeholder="Criador Admin = 1" required> 
             <button type="submit">Adicionar Conteúdo</button>
         </form>
     </div>
@@ -81,6 +54,7 @@ Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` d
                     <th>Descrição</th>
                     <th>Tipo</th>
                     <th>Público</th>
+                    <th>Criador</th>
                 </tr>
             </thead>
             <tbody>
@@ -89,85 +63,134 @@ Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` d
         </table>
     </div>
 
-    <script>
-        const apiUrl = 'http://127.0.0.1:8000/api/contents/';
+   <script src="script.js"></script>
 
-        // Função para obter e listar conteúdos
-        async function fetchContents() {
-            try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-                const contentTable = document.querySelector('#contentTable tbody');
-                contentTable.innerHTML = '';
+</body>
+</html>
+```
 
-                data.forEach(content => {
-                    const row = `
+```css
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+}
+.content-list {
+    margin-top: 20px;
+}
+.content-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content-list th, .content-list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section input, .form-section button {
+    padding: 10px;
+    margin-right: 10px;
+}
+```
+
+```js
+const apiUrl = "http://127.0.0.1:8000/api/contents/";
+
+// Função para obter e listar conteúdos
+async function fetchContents() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    const contentTable = document.querySelector("#contentTable tbody");
+    contentTable.innerHTML = "";
+
+    data.forEach((content) => {
+      const row = `
                         <tr>
                             <td>${content.id}</td>
                             <td>${content.title}</td>
                             <td>${content.description}</td>
                             <td>${content.content_type}</td>
-                            <td>${content.is_public ? 'Sim' : 'Não'}</td>
+                            <td>${content.is_public ? "Sim" : "Não"}</td>
+                            <td>${content.creator}</td>
                         </tr>
                     `;
-                    contentTable.innerHTML += row;
-                });
-            } catch (error) {
-                console.error('Erro ao buscar conteúdos:', error);
-            }
-        }
+      contentTable.innerHTML += row;
+    });
+  } catch (error) {
+    console.error("Erro ao buscar conteúdos:", error);
+  }
+}
 
-        // Função para adicionar novo conteúdo
-        async function addContent(event) {
-            event.preventDefault();
+// Função para adicionar novo conteúdo
+async function addContent(event) {
+  event.preventDefault();
 
-            const title = document.getElementById('title').value;
-            const description = document.getElementById('description').value;
-            const file_url = document.getElementById('file_url').value;
-            const thumbnail_url = document.getElementById('thumbnail_url').value;
-            const content_type = document.getElementById('content_type').value;
-            const is_public = document.getElementById('is_public').checked;
+  const titleElement = document.getElementById("title");
+  const descriptionElement = document.getElementById("description");
+  const fileUrlElement = document.getElementById("file_url");
+  const thumbnailUrlElement = document.getElementById("thumbnail_url");
+  const contentTypeElement = document.getElementById("content_type");
+  const isPublicElement = document.getElementById("is_public");
+  const creatorElement = document.getElementById("creator");
 
-            const contentData = {
-                title,
-                description,
-                file_url,
-                thumbnail_url,
-                content_type,
-                is_public
-            };
+  if (!titleElement || !descriptionElement || !fileUrlElement || !thumbnailUrlElement || !contentTypeElement || !isPublicElement || !creatorElement) {
+    alert("Erro: Um ou mais elementos do formulário não foram encontrados.");
+    return;
+  }
 
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(contentData)
-                });
+  const title = titleElement.value;
+  const description = descriptionElement.value;
+  const file_url = fileUrlElement.value;
+  const thumbnail_url = thumbnailUrlElement.value;
+  const content_type = contentTypeElement.value;
+  const is_public = isPublicElement.checked;
+  const creator = creatorElement.value;
 
-                if (response.ok) {
-                    alert('Conteúdo adicionado com sucesso!');
-                    fetchContents(); // Atualiza a lista de conteúdos
-                    document.getElementById('contentForm').reset(); // Limpa o formulário
-                } else {
-                    alert('Erro ao adicionar conteúdo');
-                }
-            } catch (error) {
-                console.error('Erro ao adicionar conteúdo:', error);
-            }
-        }
+  const contentData = {
+    title,
+    description,
+    file_url,
+    thumbnail_url,
+    content_type,
+    is_public,
+    creator
+  };
 
-        // Inicializar a página carregando os conteúdos
-        document.addEventListener('DOMContentLoaded', fetchContents);
+  try {
+    const response = await fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(contentData),
+    });
 
-        // Evento de envio do formulário
-        document.getElementById('contentForm').addEventListener('submit', addContent);
+    if (response.ok) {
+      alert("Conteúdo adicionado com sucesso!");
+      fetchContents(); // Atualiza a lista de conteúdos
+      document.getElementById("contentForm").reset(); // Limpa o formulário
+    } else {
+      const errorData = await response.json();
+      alert(`Erro ao adicionar conteúdo 1: ${errorData.message || response.statusText}`);
+    }
+  } catch (error) {
+    console.error("Erro ao adicionar conteúdo 2:", error);
+  }
+}
 
-    </script>
+// Inicializar a página carregando os conteúdos
+document.addEventListener("DOMContentLoaded", fetchContents);
 
-</body>
-</html>
+// Evento de envio do formulário
+document.getElementById("contentForm").addEventListener("submit", addContent);
+
 ```
 
 ---
