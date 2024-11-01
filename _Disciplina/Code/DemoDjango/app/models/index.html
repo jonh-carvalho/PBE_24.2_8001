@@ -1230,6 +1230,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/01_Regras_Neg%C3%B3cio_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 Regras Negócio Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../Roteiros/Django/02_Modelagem_Streaming/" class="md-nav__link">
         
   
@@ -2748,7 +2769,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=06a38e1e">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=eee33cb2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2775,7 +2796,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6a70980a">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=038f9331">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2819,18 +2840,18 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">ImproperlyConfigured</span>                      Traceback (most recent call last)
 Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">class</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,0,255)">Department</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">models</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">Model</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">:</span>
-<span class="ansi-green-fg">      2</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">models</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">CharField</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">max_length</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">100</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      4</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">def</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,0,255)">__str__</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">class</span> <span class="ansi-bold" style="color: rgb(0,0,255)">Department</span>(models<span style="color: rgb(98,98,98)">.</span>Model):
+<span class="ansi-green-fg">      2</span>     name <span style="color: rgb(98,98,98)">=</span> models<span style="color: rgb(98,98,98)">.</span>CharField(max_length<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">100</span>)
+<span class="ansi-green-fg">      4</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">__str__</span>(<span style="color: rgb(0,135,0)">self</span>):
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\db\models\base.py:129</span>, in <span class="ansi-cyan-fg">ModelBase.__new__</span><span class="ansi-blue-intense-fg ansi-bold">(cls, name, bases, attrs, **kwargs)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\db\models\base.py:129</span>, in <span class="ansi-cyan-fg">ModelBase.__new__</span><span class="ansi-blue-intense-fg ansi-bold">(cls, name, bases, attrs, **kwargs)</span>
 <span class="ansi-green-fg">    126</span> app_label <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
 <span class="ansi-green-fg">    128</span> <span style="color: rgb(95,135,135)"># Look for an application configuration to attach the model to.</span>
 <span class="ansi-green-intense-fg ansi-bold">--&gt; 129</span> app_config <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">apps</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get_containing_app_config</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">module</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">    131</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(meta, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">app_label</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
 <span class="ansi-green-fg">    132</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> app_config <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\apps\registry.py:260</span>, in <span class="ansi-cyan-fg">Apps.get_containing_app_config</span><span class="ansi-blue-intense-fg ansi-bold">(self, object_name)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\apps\registry.py:260</span>, in <span class="ansi-cyan-fg">Apps.get_containing_app_config</span><span class="ansi-blue-intense-fg ansi-bold">(self, object_name)</span>
 <span class="ansi-green-fg">    251</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">get_containing_app_config</span>(<span style="color: rgb(0,135,0)">self</span>, object_name):
 <span class="ansi-green-fg">    252</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">"""</span>
 <span class="ansi-green-fg">    253</span> <span style="color: rgb(175,0,0)">    Look for an app config containing a given object.</span>
@@ -2842,7 +2863,7 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 <span class="ansi-green-fg">    261</span>     candidates <span style="color: rgb(98,98,98)">=</span> []
 <span class="ansi-green-fg">    262</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> app_config <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>app_configs<span style="color: rgb(98,98,98)">.</span>values():
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\apps\registry.py:137</span>, in <span class="ansi-cyan-fg">Apps.check_apps_ready</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\apps\registry.py:137</span>, in <span class="ansi-cyan-fg">Apps.check_apps_ready</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
 <span class="ansi-green-fg">    132</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">django</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">conf</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> settings
 <span class="ansi-green-fg">    134</span> <span style="color: rgb(95,135,135)"># If "not ready" is due to unconfigured settings, accessing</span>
 <span class="ansi-green-fg">    135</span> <span style="color: rgb(95,135,135)"># INSTALLED_APPS raises a more helpful ImproperlyConfigured</span>
@@ -2850,14 +2871,14 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 <span class="ansi-green-intense-fg ansi-bold">--&gt; 137</span> <span class="ansi-yellow-bg">settings</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">INSTALLED_APPS</span>
 <span class="ansi-green-fg">    138</span> <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> AppRegistryNotReady(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Apps aren</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">t loaded yet.</span><span style="color: rgb(175,0,0)">"</span>)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\conf\__init__.py:81</span>, in <span class="ansi-cyan-fg">LazySettings.__getattr__</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\conf\__init__.py:81</span>, in <span class="ansi-cyan-fg">LazySettings.__getattr__</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
 <span class="ansi-green-fg">     79</span> <span style="color: rgb(175,0,0)">"""Return the value of a setting and cache it in self.__dict__."""</span>
 <span class="ansi-green-fg">     80</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (_wrapped <span style="color: rgb(98,98,98)">:=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> empty:
 <span class="ansi-green-intense-fg ansi-bold">---&gt; 81</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_setup</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">     82</span>     _wrapped <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped
 <span class="ansi-green-fg">     83</span> val <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(_wrapped, name)
 
-File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8001\.venv\Lib\site-packages\django\conf\__init__.py:61</span>, in <span class="ansi-cyan-fg">LazySettings._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\django\conf\__init__.py:61</span>, in <span class="ansi-cyan-fg">LazySettings._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
 <span class="ansi-green-fg">     59</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> settings_module:
 <span class="ansi-green-fg">     60</span>     desc <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">setting </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">"</span> <span style="color: rgb(98,98,98)">%</span> name) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> name <span class="ansi-bold" style="color: rgb(0,135,0)">else</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">settings</span><span style="color: rgb(175,0,0)">"</span>
 <span class="ansi-green-intense-fg ansi-bold">---&gt; 61</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> ImproperlyConfigured(
@@ -2875,7 +2896,7 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9df35110">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=862810e8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2925,9 +2946,9 @@ File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Document
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
 Cell <span class="ansi-green-intense-fg ansi-bold">In[3], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">class</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,0,255)">Employee</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">models</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">Model</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">:</span>
-<span class="ansi-green-fg">      2</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">models</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">CharField</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">max_length</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">100</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      3</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">email</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">models</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">EmailField</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">class</span> <span class="ansi-bold" style="color: rgb(0,0,255)">Employee</span>(models<span style="color: rgb(98,98,98)">.</span>Model):
+<span class="ansi-green-fg">      2</span>     name <span style="color: rgb(98,98,98)">=</span> models<span style="color: rgb(98,98,98)">.</span>CharField(max_length<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">100</span>)
+<span class="ansi-green-fg">      3</span>     email <span style="color: rgb(98,98,98)">=</span> models<span style="color: rgb(98,98,98)">.</span>EmailField()
 
 Cell <span class="ansi-green-intense-fg ansi-bold">In[3], line 5</span>, in <span class="ansi-cyan-fg">Employee</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
 <span class="ansi-green-fg">      3</span> email <span style="color: rgb(98,98,98)">=</span> models<span style="color: rgb(98,98,98)">.</span>EmailField()
@@ -2943,7 +2964,7 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[3], line 5</span>, in <spa
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=02bf6dd3">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=56538701">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
