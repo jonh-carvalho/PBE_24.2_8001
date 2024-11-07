@@ -1,4 +1,4 @@
-# Autenticação
+# 10 Autenticação
 
 Para autenticar no Django REST Framework (DRF) e consumir a API como um usuário logado, você pode usar várias abordagens de autenticação, como:
 
@@ -98,7 +98,6 @@ Agora, ao consumir a API, adicione o token ao cabeçalho de autenticação (`Aut
 #### Exemplo de Consumo no Postman
 
 1. Acesse qualquer endpoint da API protegido, como `http://localhost:8000/api/contents/`.
-
 2. No cabeçalho (`Headers`), adicione:
 
 ```plaintext

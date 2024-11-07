@@ -20,7 +20,7 @@
     
     
       
-        <title>Filtros - Projeto Back-End</title>
+        <title>09 Filtros - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filtros" class="md-skip">
+        <a href="#09-filtros" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Filtros
+              09 Filtros
             
           </span>
         </div>
@@ -1406,7 +1406,7 @@
           
   
   <span class="md-ellipsis">
-    Filtros
+    09 Filtros
   </span>
   
 
@@ -1417,7 +1417,7 @@
         
   
   <span class="md-ellipsis">
-    Filtros
+    09 Filtros
   </span>
   
 
@@ -1533,7 +1533,7 @@
         
   
   <span class="md-ellipsis">
-    Autenticação
+    10 Autenticação
   </span>
   
 
@@ -2567,7 +2567,7 @@
   
 
 
-<h1 id="filtros">Filtros</h1>
+<h1 id="09-filtros">09 Filtros</h1>
 <p>Para implementar o filtro você pode definir manualmente o filtro na sua view, utilizando parâmetros de query (<code>query params</code>) para filtrar o <code>content_type</code> diretamente na sua consulta.</p>
 <h2 id="exemplo-de-view-com-filtro-manual">Exemplo de View com Filtro Manual</h2>
 <p>Aqui está uma implementação usando uma <code>ListAPIView</code>, onde o filtro é feito verificando o valor do parâmetro <code>content_type</code> na requisição.</p>
@@ -2592,15 +2592,9 @@
 </span></code></pre></div>
 <h3 id="explicacao">Explicação</h3>
 <ol>
-<li>
-<p><strong>Recuperação do Parâmetro de Query</strong>: A função <code>get_queryset()</code> verifica se o parâmetro <code>content_type</code> foi enviado na requisição (<code>self.request.query_params.get('content_type')</code>).</p>
-</li>
-<li>
-<p><strong>Validação do Parâmetro</strong>: A verificação <code>if content_type in [choice[0] for choice in Content.CONTENT_TYPE_CHOICES]</code> assegura que o valor de <code>content_type</code> corresponde a uma das escolhas válidas definidas no modelo <code>Content</code>.</p>
-</li>
-<li>
-<p><strong>Aplicação do Filtro</strong>: Se o parâmetro <code>content_type</code> for válido (<code>audio</code> ou <code>video</code>), ele será aplicado ao queryset usando <code>filter(content_type=content_type)</code>.</p>
-</li>
+<li><strong>Recuperação do Parâmetro de Query</strong>: A função <code>get_queryset()</code> verifica se o parâmetro <code>content_type</code> foi enviado na requisição (<code>self.request.query_params.get('content_type')</code>).</li>
+<li><strong>Validação do Parâmetro</strong>: A verificação <code>if content_type in [choice[0] for choice in Content.CONTENT_TYPE_CHOICES]</code> assegura que o valor de <code>content_type</code> corresponde a uma das escolhas válidas definidas no modelo <code>Content</code>.</li>
+<li><strong>Aplicação do Filtro</strong>: Se o parâmetro <code>content_type</code> for válido (<code>audio</code> ou <code>video</code>), ele será aplicado ao queryset usando <code>filter(content_type=content_type)</code>.</li>
 </ol>
 <h3 id="testando-o-filtro">Testando o Filtro</h3>
 <p>Você pode acessar os endpoints da seguinte forma:</p>
@@ -2649,15 +2643,9 @@
 </span></code></pre></div>
 <h3 id="explicacoes">Explicações</h3>
 <ol>
-<li>
-<p><strong>Filtro de <code>content_type</code></strong>: O mesmo que antes, filtrando apenas se <code>content_type</code> está presente nos valores válidos.</p>
-</li>
-<li>
-<p><strong>Filtro de <code>title</code></strong>: Se o parâmetro <code>title</code> é passado, a consulta <code>filter(title__icontains=title)</code> procura por conteúdos que contenham o valor de <code>title</code> em qualquer parte do título, sem diferenciar maiúsculas de minúsculas.</p>
-</li>
-<li>
-<p><strong>Filtro de <code>description</code></strong>: O mesmo princípio é aplicado ao parâmetro <code>description</code> com <code>filter(description__icontains=description)</code>.</p>
-</li>
+<li><strong>Filtro de <code>content_type</code></strong>: O mesmo que antes, filtrando apenas se <code>content_type</code> está presente nos valores válidos.</li>
+<li><strong>Filtro de <code>title</code></strong>: Se o parâmetro <code>title</code> é passado, a consulta <code>filter(title__icontains=title)</code> procura por conteúdos que contenham o valor de <code>title</code> em qualquer parte do título, sem diferenciar maiúsculas de minúsculas.</li>
+<li><strong>Filtro de <code>description</code></strong>: O mesmo princípio é aplicado ao parâmetro <code>description</code> com <code>filter(description__icontains=description)</code>.</li>
 </ol>
 <h3 id="teste-o-filtro">Teste o Filtro</h3>
 <p>Agora você pode usar os parâmetros <code>content_type</code>, <code>title</code> e <code>description</code> para filtrar os conteúdos:</p>
@@ -2729,13 +2717,13 @@
         
         
           
-          <a href="../10_Autentica%C3%A7%C3%A3o/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Autenticação">
+          <a href="../10_Autentica%C3%A7%C3%A3o/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 10 Autenticação">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Autenticação
+                10 Autenticação
               </div>
             </div>
             <div class="md-footer__button md-icon">
