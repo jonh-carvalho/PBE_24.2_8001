@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-regras-de-negocio-para-usuarios" class="md-skip">
+        <a href="#regras-de-negocio" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -1231,6 +1231,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1258,6 +1260,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Índice">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1318,14 +1322,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="6. Regras de Negócio para Assinaturas e Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#7-regras-de-negocio-para-seguranca-e-conformidade" class="md-nav__link">
     <span class="md-ellipsis">
       7. Regras de Negócio para Segurança e Conformidade
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1476,6 +1486,48 @@
   
   <span class="md-ellipsis">
     08 CorsOrigin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Filtros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filtros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Autentica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autenticação
   </span>
   
 
@@ -2407,6 +2459,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2466,14 +2520,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="6. Regras de Negócio para Assinaturas e Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#7-regras-de-negocio-para-seguranca-e-conformidade" class="md-nav__link">
     <span class="md-ellipsis">
       7. Regras de Negócio para Segurança e Conformidade
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2495,10 +2555,133 @@
   
 
 
-  <h1>01 Regras Negócio Streaming</h1>
-
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<h1 id="regras-de-negocio">. <strong>Regras de Negócio</strong></h1>
+<h2 id="1-regras-de-negocio-para-usuarios">1. <strong>Regras de Negócio para Usuários</strong></h2>
+<ul>
+<li>
+<p><strong>Cadastro e Login:</strong></p>
+</li>
+<li>
+<p>Apenas usuários registrados podem acessar funcionalidades como criação de playlists, upload de conteúdo e gerenciamento de conteúdo.</p>
+</li>
+<li>Um sistema de verificação por e-mail deve ser implementado para garantir que apenas e-mails válidos sejam utilizados para cadastro.</li>
+<li>
+<p><strong>Perfis de Usuário e Permissões:</strong></p>
+</li>
+<li>
+<p>Usuários básicos podem criar e gerenciar suas playlists pessoais, mas não podem fazer upload de conteúdo.</p>
+</li>
+<li>Criadores de conteúdo e administradores possuem permissões adicionais para fazer upload de conteúdo e gerenciar suas criações.</li>
+<li>Os administradores possuem acesso completo ao sistema, incluindo edição e exclusão de conteúdos e playlists de qualquer usuário.</li>
+<li>
+<p><strong>Gerenciamento de Contas:</strong></p>
+</li>
+<li>
+<p>Cada usuário deve poder visualizar e gerenciar suas playlists e conteúdos.</p>
+</li>
+<li>Somente o proprietário de uma playlist pode editá-la ou excluí-la, com exceção dos administradores.</li>
+</ul>
+<h2 id="2-regras-de-negocio-para-playlists">2. <strong>Regras de Negócio para Playlists</strong></h2>
+<ul>
+<li>
+<p><strong>Criação e Gerenciamento de Playlists:</strong></p>
+</li>
+<li>
+<p>Um usuário pode criar um número limitado de playlists (limite configurável) para evitar excesso de dados no sistema.</p>
+</li>
+<li>Playlists devem ter um título único dentro do contexto do usuário para facilitar a busca e organização.</li>
+<li>Conteúdos podem ser adicionados a uma playlist apenas uma vez; duplicatas não são permitidas.</li>
+<li>É permitido que o usuário compartilhe suas playlists publicamente se o recurso for ativado (opção de playlist pública).</li>
+<li>
+<p><strong>Conteúdos em Playlists:</strong></p>
+</li>
+<li>
+<p>Somente conteúdos públicos podem ser adicionados a playlists públicas.</p>
+</li>
+<li>Conteúdos privados podem ser adicionados a playlists privadas, mas não podem ser compartilhados ou visualizados por outros usuários.</li>
+<li>Usuários podem reordenar conteúdos dentro de suas playlists.</li>
+</ul>
+<h2 id="3-regras-de-negocio-para-conteudos">3. <strong>Regras de Negócio para Conteúdos</strong></h2>
+<ul>
+<li>
+<p><strong>Upload e Gerenciamento de Conteúdos:</strong></p>
+</li>
+<li>
+<p>Apenas usuários com permissão de criador de conteúdo podem fazer uploads. O conteúdo deve estar nos formatos de arquivo suportados (ex.: <code>.mp4</code>, <code>.mp3</code>).</p>
+</li>
+<li>Cada conteúdo deve ter uma miniatura (thumbnail) e uma descrição para melhorar a experiência do usuário e facilitar a navegação.</li>
+<li>O título de cada conteúdo deve ser único por criador para evitar confusão.</li>
+<li>
+<p><strong>Políticas de Publicação:</strong></p>
+</li>
+<li>
+<p>Todo conteúdo passa por uma verificação automatizada para garantir que não contenha materiais impróprios ou violações de direitos autorais.</p>
+</li>
+<li>Criadores podem definir se seu conteúdo será <strong>público</strong> ou <strong>privado</strong>.</li>
+<li>Conteúdos públicos podem ser visualizados e adicionados a playlists de qualquer usuário, enquanto conteúdos privados são acessíveis apenas ao criador e a playlists privadas.</li>
+</ul>
+<h2 id="4-regras-de-negocio-para-consumo-de-conteudos">4. <strong>Regras de Negócio para Consumo de Conteúdos</strong></h2>
+<ul>
+<li><strong>Streaming e Download:</strong></li>
+<li>Conteúdos públicos podem ser reproduzidos via streaming por qualquer usuário, desde que respeite as permissões de visualização.</li>
+<li>Downloads de conteúdos podem ser restritos a usuários premium, com limitação de número de downloads mensais.</li>
+<li>Usuários podem marcar conteúdos como favoritos para acessá-los rapidamente, mas essa funcionalidade está limitada a um certo número de favoritos por perfil básico.</li>
+</ul>
+<h2 id="5-notificacoes-e-feedback">5. <strong>Notificações e Feedback</strong></h2>
+<ul>
+<li>
+<p><strong>Sistema de Notificações:</strong></p>
+</li>
+<li>
+<p>Os usuários devem ser notificados quando novos conteúdos de criadores que eles seguem são publicados.</p>
+</li>
+<li>Notificações também devem alertar sobre o status de uma playlist ou conteúdo, como exclusões, alterações de privacidade, entre outros.</li>
+<li>
+<p><strong>Feedback e Reportes:</strong></p>
+</li>
+<li>
+<p>Usuários devem poder reportar conteúdos impróprios ou que violam as regras da plataforma.</p>
+</li>
+<li>Comentários e avaliações de conteúdos são permitidos para incentivar o engajamento e fornecer feedback aos criadores.</li>
+</ul>
+<h2 id="6-regras-de-negocio-para-assinaturas-e-recursos-premium">6. <strong>Regras de Negócio para Assinaturas e Recursos Premium</strong></h2>
+<ul>
+<li>
+<p><strong>Modelo de Assinatura:</strong></p>
+</li>
+<li>
+<p>Usuários podem fazer upgrade para uma conta premium, que oferece vantagens como downloads ilimitados, acesso antecipado a conteúdos, e acesso exclusivo a playlists e conteúdos especiais.</p>
+</li>
+<li>O sistema deve garantir a renovação automática das assinaturas premium e permitir cancelamento a qualquer momento.</li>
+<li>
+<p><strong>Benefícios Premium:</strong></p>
+</li>
+<li>
+<p>Assinantes premium podem ter um número maior de playlists e favoritos, bem como maior capacidade de armazenamento de playlists.</p>
+</li>
+<li>Conteúdos premium (acessíveis apenas por assinantes) podem ser disponibilizados para atrair novos criadores e assinantes.</li>
+</ul>
+<h3 id="7-regras-de-negocio-para-seguranca-e-conformidade">7. <strong>Regras de Negócio para Segurança e Conformidade</strong></h3>
+<ul>
+<li>
+<p><strong>Políticas de Privacidade e Compliance:</strong></p>
+</li>
+<li>
+<p>Todos os dados de usuários devem ser armazenados em conformidade com a GDPR ou outra legislação local aplicável.</p>
+</li>
+<li>Somente administradores e o próprio usuário podem acessar dados pessoais sensíveis.</li>
+<li>
+<p><strong>Limites de Acesso e Proteção de Dados:</strong></p>
+</li>
+<li>
+<p>Taxas de requisição (rate-limiting) devem ser aplicadas para evitar uso excessivo ou ataques à API.</p>
+</li>
+<li>Um sistema de autenticação robusto deve ser implementado, incluindo verificação de senha forte e autenticação multifator (2FA) para usuários premium ou criadores de conteúdo.</li>
+</ul>
+<h1 id="essas-regras-de-negocio-ajudam-a-definir-o-comportamento-do-app-permitindo-que-ele-seja-usado-de-maneira-organizada-segura-e-eficiente-tanto-por-usuarios-finais-quanto-por-administradores-e-criadores">Essas regras de negócio ajudam a definir o comportamento do app, permitindo que ele seja usado de maneira organizada, segura e eficiente tanto por usuários finais quanto por administradores e criadores.</h1>
 <p>Para um aplicativo de streaming que inclui funcionalidades de criação e gerenciamento de playlists e upload de conteúdo por criadores, as regras de negócio são essenciais para garantir uma experiência consistente e segura para os usuários. Abaixo, seguem algumas regras de negócio que podem ser aplicadas a esse tipo de aplicação:</p>
-<h3 id="1-regras-de-negocio-para-usuarios">1. <strong>Regras de Negócio para Usuários</strong></h3>
+<h3 id="1-regras-de-negocio-para-usuarios_1">1. <strong>Regras de Negócio para Usuários</strong></h3>
 <ul>
 <li>
 <p><strong>Cadastro e Login:</strong></p>
@@ -2523,7 +2706,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="2-regras-de-negocio-para-playlists">2. <strong>Regras de Negócio para Playlists</strong></h3>
+<h3 id="2-regras-de-negocio-para-playlists_1">2. <strong>Regras de Negócio para Playlists</strong></h3>
 <ul>
 <li>
 <p><strong>Criação e Gerenciamento de Playlists:</strong></p>
@@ -2543,7 +2726,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="3-regras-de-negocio-para-conteudos">3. <strong>Regras de Negócio para Conteúdos</strong></h3>
+<h3 id="3-regras-de-negocio-para-conteudos_1">3. <strong>Regras de Negócio para Conteúdos</strong></h3>
 <ul>
 <li>
 <p><strong>Upload e Gerenciamento de Conteúdos:</strong></p>
@@ -2562,7 +2745,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="4-regras-de-negocio-para-consumo-de-conteudos">4. <strong>Regras de Negócio para Consumo de Conteúdos</strong></h3>
+<h3 id="4-regras-de-negocio-para-consumo-de-conteudos_1">4. <strong>Regras de Negócio para Consumo de Conteúdos</strong></h3>
 <ul>
 <li><strong>Streaming e Download:</strong><ul>
 <li>Conteúdos públicos podem ser reproduzidos via streaming por qualquer usuário, desde que respeite as permissões de visualização.</li>
@@ -2571,7 +2754,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="5-notificacoes-e-feedback">5. <strong>Notificações e Feedback</strong></h3>
+<h3 id="5-notificacoes-e-feedback_1">5. <strong>Notificações e Feedback</strong></h3>
 <ul>
 <li>
 <p><strong>Sistema de Notificações:</strong></p>
@@ -2588,7 +2771,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="6-regras-de-negocio-para-assinaturas-e-recursos-premium">6. <strong>Regras de Negócio para Assinaturas e Recursos Premium</strong></h3>
+<h3 id="6-regras-de-negocio-para-assinaturas-e-recursos-premium_1">6. <strong>Regras de Negócio para Assinaturas e Recursos Premium</strong></h3>
 <ul>
 <li>
 <p><strong>Modelo de Assinatura:</strong></p>
@@ -2605,7 +2788,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="7-regras-de-negocio-para-seguranca-e-conformidade">7. <strong>Regras de Negócio para Segurança e Conformidade</strong></h3>
+<h3 id="7-regras-de-negocio-para-seguranca-e-conformidade_1">7. <strong>Regras de Negócio para Segurança e Conformidade</strong></h3>
 <ul>
 <li>
 <p><strong>Políticas de Privacidade e Compliance:</strong></p>
@@ -2623,6 +2806,21 @@
 </li>
 </ul>
 <p>Essas regras de negócio ajudam a definir o comportamento do app, permitindo que ele seja usado de maneira organizada, segura e eficiente tanto por usuários finais quanto por administradores e criadores.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>67303c6c8b8522de72f67ad291473b2c73610377</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 
