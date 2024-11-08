@@ -1,4 +1,4 @@
-# Filtros
+# 09 Filtros
 
 Para implementar o filtro você pode definir manualmente o filtro na sua view, utilizando parâmetros de query (`query params`) para filtrar o `content_type` diretamente na sua consulta.
 
@@ -23,16 +23,14 @@ class ContentListView(generics.ListAPIView):
 
         if content_type in [choice[0] for choice in Content.CONTENT_TYPE_CHOICES]:
             queryset = queryset.filter(content_type=content_type)
-        
+      
         return queryset
 ```
 
 ### Explicação
 
 1. **Recuperação do Parâmetro de Query**: A função `get_queryset()` verifica se o parâmetro `content_type` foi enviado na requisição (`self.request.query_params.get('content_type')`).
-
 2. **Validação do Parâmetro**: A verificação `if content_type in [choice[0] for choice in Content.CONTENT_TYPE_CHOICES]` assegura que o valor de `content_type` corresponde a uma das escolhas válidas definidas no modelo `Content`.
-
 3. **Aplicação do Filtro**: Se o parâmetro `content_type` for válido (`audio` ou `video`), ele será aplicado ao queryset usando `filter(content_type=content_type)`.
 
 ### Testando o Filtro
@@ -71,7 +69,7 @@ class ContentListView(generics.ListAPIView):
 
     def get_queryset(self):
         queryset = Content.objects.all()
-        
+      
         # Filtro por tipo de conteúdo (audio/video)
         content_type = self.request.query_params.get('content_type')
         if content_type in [choice[0] for choice in Content.CONTENT_TYPE_CHOICES]:
@@ -93,9 +91,7 @@ class ContentListView(generics.ListAPIView):
 ### Explicações
 
 1. **Filtro de `content_type`**: O mesmo que antes, filtrando apenas se `content_type` está presente nos valores válidos.
-
 2. **Filtro de `title`**: Se o parâmetro `title` é passado, a consulta `filter(title__icontains=title)` procura por conteúdos que contenham o valor de `title` em qualquer parte do título, sem diferenciar maiúsculas de minúsculas.
-
 3. **Filtro de `description`**: O mesmo princípio é aplicado ao parâmetro `description` com `filter(description__icontains=description)`.
 
 ### Teste o Filtro
@@ -103,7 +99,7 @@ class ContentListView(generics.ListAPIView):
 Agora você pode usar os parâmetros `content_type`, `title` e `description` para filtrar os conteúdos:
 
 - Para buscar conteúdos de áudio com "Music" no título:
-  
+
 ```bash
 http://localhost:8000/api/contents/?content_type=audio&title=Music
 ```
