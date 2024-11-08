@@ -18,10 +18,10 @@ Abaixo, vamos ver como configurar a **Autenticação via Token** no Django e com
     pip install djangorestframework
 ```
 
-2\. Instale o pacote `djangorestframework-authtoken`, necessário para gerar e gerenciar tokens de autenticação:
+2\. Instale o pacote `django-rest-authtoken`, necessário para gerar e gerenciar tokens de autenticação:
 
 ```bash
-   pip install djangorestframework-authtoken
+   pip install django-rest-authtoken
 ```
 
 3\. Adicione `rest_framework` e `rest_framework.authtoken` ao `INSTALLED_APPS` no seu `settings.py`:
@@ -83,6 +83,15 @@ Para obter o token, você pode usar o `curl`, Postman, ou qualquer cliente HTTP.
    password: sua_senha
 ```
 
+ou no body -> raw -> json
+
+```json
+{
+        "username": "admin",
+        "password": "123456"
+        
+    }
+
 A resposta será o token de autenticação do usuário, por exemplo:
 
 ```json
@@ -101,7 +110,8 @@ Agora, ao consumir a API, adicione o token ao cabeçalho de autenticação (`Aut
 2. No cabeçalho (`Headers`), adicione:
 
 ```plaintext
-   Authorization: Token c1c82e123abc123abcde4567def01234abcd5678
+  Key: Authorization 
+  value: token c1c82e123abc123abcde4567def01234abcd5678
 ```
 
 Com esse cabeçalho, o Django REST Framework identificará o usuário autenticado e permitirá o acesso aos recursos da API, desde que o usuário tenha as permissões necessárias.
