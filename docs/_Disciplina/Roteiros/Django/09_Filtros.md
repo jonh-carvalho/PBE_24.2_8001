@@ -66,6 +66,7 @@ from .serializers import ContentSerializer
 
 class ContentListView(generics.ListAPIView):
     serializer_class = ContentSerializer
+    queryset = Content.objects.all()
 
     def get_queryset(self):
         queryset = Content.objects.all()
