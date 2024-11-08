@@ -1573,6 +1573,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2598,8 +2619,8 @@
 <p>1. Instale o pacote <code>djangorestframework</code> (caso ainda não tenha):</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>djangorestframework
 </span></code></pre></div>
-<p>2. Instale o pacote <code>djangorestframework-authtoken</code>, necessário para gerar e gerenciar tokens de autenticação:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">   </span>pip<span class="w"> </span>install<span class="w"> </span>djangorestframework-authtoken
+<p>2. Instale o pacote <code>django-rest-authtoken</code>, necessário para gerar e gerenciar tokens de autenticação:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">   </span>pip<span class="w"> </span>install<span class="w"> </span>django-rest-authtoken
 </span></code></pre></div>
 <p>3. Adicione <code>rest_framework</code> e <code>rest_framework.authtoken</code> ao <code>INSTALLED_APPS</code> no seu <code>settings.py</code>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>   <span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
@@ -2643,10 +2664,19 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>   username: seu_usuario
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>   password: sua_senha
 </span></code></pre></div>
-<p>A resposta será o token de autenticação do usuário, por exemplo:</p>
+<p>ou no body -&gt; raw -&gt; json</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c1c82e123abc123abcde4567def01234abcd5678&quot;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">}</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">        </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">        </span><span class="nt">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="err">A</span><span class="w"> </span><span class="err">respos</span><span class="kc">ta</span><span class="w"> </span><span class="err">será</span><span class="w"> </span><span class="err">o</span><span class="w"> </span><span class="kc">t</span><span class="err">oke</span><span class="kc">n</span><span class="w"> </span><span class="err">de</span><span class="w"> </span><span class="err">au</span><span class="kc">tent</span><span class="err">icação</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">usuário</span><span class="p">,</span><span class="w"> </span><span class="err">por</span><span class="w"> </span><span class="err">exemplo</span><span class="p">:</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="err">```jso</span><span class="kc">n</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">{</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c1c82e123abc123abcde4567def01234abcd5678&quot;</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="passo-4-usar-o-token-para-consumir-a-api">Passo 4: Usar o Token para Consumir a API</h3>
 <p>Agora, ao consumir a API, adicione o token ao cabeçalho de autenticação (<code>Authorization</code>) usando o formato <code>Token &lt;token&gt;</code>.</p>
@@ -2655,7 +2685,8 @@
 <li>Acesse qualquer endpoint da API protegido, como <code>http://localhost:8000/api/contents/</code>.</li>
 <li>No cabeçalho (<code>Headers</code>), adicione:</li>
 </ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>   Authorization: Token c1c82e123abc123abcde4567def01234abcd5678
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  Key: Authorization 
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  value: token c1c82e123abc123abcde4567def01234abcd5678
 </span></code></pre></div>
 <p>Com esse cabeçalho, o Django REST Framework identificará o usuário autenticado e permitirá o acesso aos recursos da API, desde que o usuário tenha as permissões necessárias.</p>
 <h3 id="alternativa-uso-no-frontend-com-javascript-fetch-api">Alternativa: Uso no Frontend com JavaScript (Fetch API)</h3>
