@@ -21,7 +21,7 @@ Abaixo, vamos ver como configurar a **Autenticação via Token** no Django e com
 2\. Instale o pacote `djangorestframework-authtoken`, necessário para gerar e gerenciar tokens de autenticação:
 
 ```bash
-   pip install djangorestframework-authtoken
+   pip install django-rest-authtoken
 ```
 
 3\. Adicione `rest_framework` e `rest_framework.authtoken` ao `INSTALLED_APPS` no seu `settings.py`:
@@ -30,7 +30,7 @@ Abaixo, vamos ver como configurar a **Autenticação via Token** no Django e com
    INSTALLED_APPS = [
        # Outros apps
        'rest_framework',
-       'rest_framework.authtoken',
+       'rest_authtoken',
    ]
 ```
 
