@@ -39,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'content_app',
     'rest_framework.authtoken',
+    'content_app',
+<<<<<<< HEAD
+    'rest_framework.authtoken',
+=======
+    
+>>>>>>> 5367489b5e822d72f4ecffd35ce5ed2c0cd360a3
 ]
 
 MIDDLEWARE = [
@@ -55,6 +60,7 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK = {
+<<<<<<< HEAD
        'DEFAULT_AUTHENTICATION_CLASSES': [
            'rest_framework.authentication.TokenAuthentication',
        ],
@@ -62,6 +68,15 @@ REST_FRAMEWORK = {
            'rest_framework.permissions.IsAuthenticated',
        ],
    }
+=======
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
+>>>>>>> 5367489b5e822d72f4ecffd35ce5ed2c0cd360a3
 
 ROOT_URLCONF = 'streaming_platform.urls'
 
